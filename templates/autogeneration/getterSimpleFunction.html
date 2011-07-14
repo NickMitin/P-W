@@ -1,0 +1,15 @@
+    public function get{$ucPropertyName}s(\$load = true)
+    {
+      \$cacheKey = '{$objectName}_{$propertyName}s_' . \$this->properties['identifier'];
+      
+      \$sql = "
+        SELECT 
+          `{$tableName}`.`{$fieldName}` AS `identifier`
+        FROM 
+          `{$tableName}`
+        WHERE 
+          `{$tableName}`.`{$thisObjectFieldName}` = " . \$this->properties['identifier'] . ";
+      ";
+      
+      return \$this->getSimpleLinks(\$sql, \$cacheKey, '{$referencedObjectName}', E_OBJECTS_NOT_FOUND, \$load);
+    }

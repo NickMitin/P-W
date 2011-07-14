@@ -1,0 +1,33 @@
+<?php 
+  
+{$license}
+
+  final class {$className} extends bmDataObject
+  {
+    public function __construct(\$application, \$parameters = array())
+    {
+      {$mapping}
+
+      parent::__construct(\$application, \$parameters);
+    }
+
+    public function __get(\$propertyName)
+    {
+      \$this->checkDirty();
+      
+      switch (\$propertyName)
+      {
+        {$getterCasesBlock}
+        default:
+          return parent::__get(\$propertyName);
+        break;
+      }
+    }
+    
+    {$referenceFunctionsBlock}
+    
+    {$deleteFunction}
+  }
+  
+?>
+

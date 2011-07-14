@@ -1,0 +1,14 @@
+<tr>
+  <td class="dataObject_currentPropertyName"> 
+    <input type="hidden" name="oldFieldName[]" value="{$field->fieldName}"> 
+    <input type="hidden" name="oldDataType[]" value="{$field->type}"> 
+    <input type="hidden" name="oldDefaultValue[]" value="{$field->defaultValue}"> 
+    {$field->propertyName} 
+  </td>
+  <td><input type="text" name="propertyName[]" value="{$field->propertyName}" /></td>
+  <td><input type="text" name="fieldName[]" value="{$field->fieldName}" /></td>
+  <td>$fieldType</td>
+  <td><input type="text" name="defaultValue[]" value="{$field->defaultValue}" /></td>
+  <td><input type="text" name="localName[]" value="{$field->localNames['nominative']}" /><input type="hidden" name="identifier[]" value="$field->identifier" /></td>
+  <td><input type="checkbox" name="droppedFieldIds[]" value="{$field->identifier}" /></td>
+</tr>

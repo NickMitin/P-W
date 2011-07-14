@@ -1,0 +1,33 @@
+#adminContainer {font: normal 16px/22px georgia; margin-left: 30px;}
+
+#adminContainer a {color: #c00;}
+
+#adminContainer h1 {margin: 30px 0 10px 0; font-style: italic;}
+#adminContainer .clear {clear: both;}
+#adminContainer .pseudolink {color: #c00; border-bottom: 1px dotted #c00; cursor: pointer;}             
+
+#adminContainer .or {font-size: 12px; font-weight: normal; margin: 0 5px 0 15px; position: relative; top: -4px;}  
+#adminContainer .switch {font-size: 16px; font-weight: normal;  position: relative; top: -4px;}  
+
+#adminContainer #defaultUserBlock {display: none;}
+#adminContainer #defaultUserBlock #register {display: none;}
+#adminContainer #accessGrantedBlock {display: none;}
+#adminContainer #accessDeniedBlock {display: none;}
+
+#adminContainer .pair {margin-bottom: 10px;}
+#adminContainer .pair .key {float: left; width: 100px;}
+#adminContainer .pair .value {float: left; width: 300px;}
+#adminContainer input {font: normal 16px/22px georgia; width: 300px;}
+#adminContainer button {font: normal 16px/22px georgia; width: 200px;}
+
+#adminContainer #loginEmailComment {display: none; float: left;}
+#adminContainer #loginPasswordComment {display: none; float: left;}
+#adminContainer #loginCommentBar {display: none;}         
+
+#adminContainer #registerEmailComment {display: none; float: left;}
+#adminContainer #registerPasswordComment {display: none; float: left;}
+#adminContainer #registerCommentBar {display: none;}         
+
+#adminContainer .errorMessage {margin: 4px 0 0 10px; color: #f00;}
+
+#adminContainer #sql {font-family: courier;} 

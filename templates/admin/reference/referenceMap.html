@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>    
+    <script type="text/javascript" src="/scripts/ff/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/ff/swfupload/swfupload.js"></script>
+    <script type="text/javascript" src="/scripts/ff/swfupload/swfupload.cookies.js"></script>
+    <script type="text/javascript" src="/scripts/ff/swfupload/jquery.swfupload.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/ff/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/ff/global.css" />
+    <title></title> 
+  </head>
+  <body class="body">
+    <h1 class="reference_name">$reference->name</h1>
+    <br /><br />
+    <form method="post" action="/admin/reference/rp/save/$reference->identifier">
+    <table>
+    <tbody>
+    <tr class="reference_subHeading"><td colspan="4"><h2> Объекты связи </h2></tr>
+    <tr class="reference_tableCaptions"><td> </td><td>Тип объекта</td><td>Свойство</td><td>Поле в таблице</td><td>Связанный объект</td><td>Имя для пользователя</td><td>Удалить? </td></tr>
+    
+    {$objectFieldList}
+    
+    <tr class="reference_tableCaptions"><td colspan="8"><br /><br />Добавить объекты:</td></tr>
+    
+    {$newObjectFieldList}  
+    
+    </tbody>
+    </table>
+    
+    <table>
+    <tbody>
+    <tr class="reference_subHeading"><td> </td><td colspan="6"><br /><br /><h2> Свойства связи </h2></tr>
+    
+    <tr class="reference_tableCaptions"><td> </td><td>Свойство</td><td>Поле в таблице</td><td>Тип данных</td><td>Значение по умолчанию</td><td>Название для пользвателя (склоняется автоматически)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>Удалить? </td></tr>
+    
+    {$propertyFieldList}
+    
+    <tr class="reference_tableCaptions"><td colspan="8"><br /><br />Добавить поля:</td></tr>
+    
+    {$newPropertyFieldList}
+    
+    </tbody>
+    </table>
+    <br /><br />
+    <div><button type="submit">Сохранить</button></div>
+    </form>
+  </body>
+</html>

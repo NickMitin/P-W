@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+  <head>    
+    <script type="text/javascript" src="/scripts/ff/jquery.js"></script>
+    <script type="text/javascript" src="/scripts/ff/swfupload/swfupload.js"></script>
+    <script type="text/javascript" src="/scripts/ff/swfupload/swfupload.cookies.js"></script>
+    <script type="text/javascript" src="/scripts/ff/swfupload/jquery.swfupload.js"></script>
+    <link rel="stylesheet" type="text/css" href="/styles/ff/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/ff/global.css" />
+    <title></title> 
+  </head>
+  <body class="body">
+    <h1 class="dataObject_name">$dataObject->name</h1>
+    <form method="post" action="/admin/dataObject/rp/save/$dataObject->identifier">
+    <table>
+    <tbody>
+    <tr class="dataObject_tableCaptions"><td> </td><td>Свойство</td><td>Поле в таблице</td><td>Тип данных</td><td>Значение по умолчанию</td><td>Название для пользвателя (склоняется автоматически)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td>Удалить? </td></tr>
+    
+    <tr class="dataObject_id">
+      <td class="dataObject_currentPropertyName"> 
+        
+      </td>
+      <td>identifier</td>
+      <td>id</td>
+      <td>Целое число</td>
+      <td>0</td>
+      <td>Идентификатор</td>
+      <td></td>
+    </tr>
+    
+    $fieldList
+    <tr class="dataObject_tableCaptions"><td> </td><td colspan="6"><br /><br />Добавить поля:</td></tr>
+    $newFieldList
+    </tbody>
+    </table>
+    <br /><br />
+    <div><button type="submit">Сохранить</button></div>
+    </form>
+  </body>
+</html>

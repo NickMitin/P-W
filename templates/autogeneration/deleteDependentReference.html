@@ -1,0 +1,6 @@
+\${$referredObjectName}s = \$this->{$referredObjectName}s;
+
+      foreach (\${$referredObjectName}s as \${$referredObjectName})
+      {
+        \${$referredObjectName}->remove{$thisPropertyName}(\$this->properties['identifier']);
+      }

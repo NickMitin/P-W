@@ -1,0 +1,14 @@
+/*FF::AC::GETTER_CASE::{$propertyName}::{*/
+        case '{$propertyName}Ids':
+          if (!array_key_exists('{$propertyName}Ids', \$this->properties))
+          {
+            \$this->properties['{$propertyName}Ids'] = \$this->get{$ucPropertyName}s(false);
+          }
+          return \$this->properties['{$propertyName}Ids'];
+        break;
+        case '{$propertyName}s':
+          return \$this->get{$ucPropertyName}s();
+        break;
+        /*FF::AC::GETTER_CASE::{$propertyName}::}*/
+ 
+        

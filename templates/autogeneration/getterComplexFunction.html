@@ -1,0 +1,17 @@
+    public function get{$ucPropertyName}s(\$load = true)
+    {
+      \$cacheKey = '{$objectName}_{$propertyName}s_' . \$this->properties['identifier'];
+      
+      \$sql = "
+        SELECT 
+{$selectFields}
+        FROM 
+          `{$tableName}`
+        WHERE 
+          `{$tableName}`.`{$thisObjectFieldName}` = " . \$this->properties['identifier'] . ";
+      ";
+      
+      {$map}
+      
+      return \$this->getComplexLinks(\$sql, \$cacheKey, \$map, E_OBJECTS_NOT_FOUND, \$load);
+    }

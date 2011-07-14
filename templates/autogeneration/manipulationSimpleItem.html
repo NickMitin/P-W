@@ -1,0 +1,84 @@
+    public function add{$ucPropertyName}(\${$propertyName}Id)
+    {
+      \${$propertyName}Ids = \$this->{$propertyName}Ids;
+      
+      if (!in_array(\${$propertyName}Id, \${$propertyName}Ids))
+      {
+        \$this->properties['{$propertyName}Ids'][] = \${$propertyName}Id;
+      }
+      
+      \$this->dirty['save{$ucPropertyName}s'] = true;
+    }
+
+    public function remove{$ucPropertyName}(\${$propertyName}Id)
+    {
+      \${$propertyName}Ids = \$this->{$propertyName}Ids;
+      
+      foreach (\${$propertyName}Ids as \$key => \$identifier)
+      {
+        if (\$identifier == \${$propertyName}Id)
+        {
+          unset(\$this->properties['{$propertyName}Ids'][\$key]);
+        }
+      }
+      
+      \$this->dirty['save{$ucPropertyName}s'] = true;
+    }
+
+    public function remove{$ucPropertyName}s()
+    {
+      \$this->properties['{$propertyName}Ids'] = array();
+      
+      \$this->dirty['save{$ucPropertyName}s'] = true;
+    }
+
+    protected function save{$ucPropertyName}s()
+    {
+      \$dataLink = \$this->application->dataLink;
+      \$cacheLink = \$this->application->cacheLink;
+      
+      \$cacheKeysToDelete = array();
+      \$cacheKeysToDelete[] = '{$objectName}_{$propertyName}s_' . \$this->properties['identifier']; 
+      
+      \${$propertyName}Ids = \$this->properties['{$propertyName}Ids'];
+      
+      foreach (\${$propertyName}Ids as \${$propertyName}Id)
+      {
+        \$cacheKeysToDelete[] = '{$otherObjectPropertyName}_{$objectName}s_' . \${$propertyName}Id; 
+      }
+      
+      foreach (\$cacheKeysToDelete as \$cacheKey)
+      {
+        \$cacheLink->delete(\$cacheKey);
+      }
+      
+      \$sql = "
+        DELETE FROM 
+          `{$tableName}`
+        WHERE 
+          `{$thisObjectFieldName}` = " . \$this->properties['identifier'] . ";";
+      
+      \$dataLink->query(\$sql);
+      
+      \$insertStrings = array();
+      
+      foreach (\$this->properties['{$propertyName}Ids'] as \$identifier)
+      { 
+        \$insertStrings[] = '(' . \$dataLink->formatInput(\$this->properties['identifier'], BM_VT_INTEGER) . ", " . \$dataLink->formatInput(\$identifier, BM_VT_INTEGER) . ')';
+      }
+      
+      if (count(\$insertStrings) > 0)
+      {
+        \$sql = "INSERT IGNORE INTO
+                  `{$tableName}`
+                  ({$sqlFields})
+                VALUES
+                  " . implode(', ', \$insertStrings) . ";";
+                  
+        \$dataLink->query(\$sql);
+      }
+      
+      \$this->enqueueCache('save{$ucPropertyName}s');
+      \$this->dirty['save{$ucPropertyName}s'] = false;    
+    }
+    

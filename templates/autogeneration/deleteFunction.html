@@ -1,0 +1,20 @@
+/*FF::AC::DELETE_FUNCTION::{*/        
+        
+    public function delete()
+    {
+      {$deleteMainReferences}
+      
+      {$deleteDependentReferences}
+      
+      \$this->application->cacheLink->delete(\$this->objectName . \$this->properties['identifier']); 
+      
+      \$sql = "DELETE FROM 
+                `$this->name` 
+              WHERE 
+                `id` = " . \$this->properties['identifier'] . ";
+              ";
+      
+      \$this->application->dataLink->query(\$sql);
+    }
+    
+    /*FF::AC::DELETE_FUNCTION::}*/ 

@@ -1,0 +1,84 @@
+<div id="adminContainer">
+  The True Adminka
+
+  <div id="defaultUserBlock">
+    <form id="login">
+      <div class="pair">
+        <div class="key"> &nbsp; </div>
+        <div class="value"> <h1>Вход<span class="or">или</span><span class="switch pseudolink" id="toggleRegister">регистрация</span></h1> </div>
+        <div class="clear"> </div>
+      </div>
+      <div class="pair">
+        <div class="key"> E-mail </div>
+        <div class="value"> <input type="text" name="email" /> </div>
+        <div id="loginEmailComment" class="errorMessage"> </div>
+        <div class="clear"> </div>
+      </div>
+      <div class="pair">
+        <div class="key"> Пароль </div>
+        <div class="value"> <input type="password" name="password" /> </div>
+        <div id="loginPasswordComment" class="errorMessage"> </div>
+        <div class="clear"> </div>
+      </div>
+      <div class="pair" id="loginCommentBar">
+        <div class="key"> &nbsp; </div>
+        <div id="loginComment" class="errorMessage"> </div>
+        <div class="clear"> </div>
+      </div>
+      <div class="pair">
+        <div class="key"> &nbsp; </div>
+        <div class="value"> <button type="button" id="loginButton">Войти</button> </div>
+        <div class="clear"> </div>
+      </div>
+    </form>
+    <form id="register">
+      <div class="pair">
+        <div class="key"> &nbsp; </div>
+        <div class="value"> <h1>Регистрация<span class="or">или</span><span class="switch pseudolink" id="toggleLogin">вход</span></h1> </div>
+        <div class="clear"> </div>
+      </div>
+      <div class="pair">
+        <div class="key"> E-mail </div>
+        <div class="value"> <input type="text" name="email" /> </div>
+        <div id="registerEmailComment" class="errorMessage"> </div>
+        <div class="clear"> </div>
+      </div>
+      <div class="pair">
+        <div class="key"> Пароль </div>
+        <div class="value"> <input type="password" name="password" /> </div>
+        <div id="registerPasswordComment" class="errorMessage"> </div>
+        <div class="clear"> </div>
+      </div>
+      <div class="pair" id="loginCommentBar">
+        <div class="key"> &nbsp; </div>
+        <div id="registerComment" class="errorMessage"> </div>
+        <div class="clear"> </div>
+      </div>
+      <div class="pair">
+        <div class="key"> &nbsp; </div>
+        <div class="value"> <button type="button" id="registerButton">Зарегистрироваться</button> </div>
+        <div class="clear"> </div>
+      </div>
+    </form>
+  </div>
+
+  <div id="accessGrantedBlock">
+    <ul>
+      <li> <a href="/admin/dataObjects/">Датаобъекты</a> </li>
+      <li> <a href="/admin/references/">Связи</a> </li>
+      <li> <a href="/admin/router/">Страницы</a> </li>
+    </ul>
+  </div>
+
+  <div id="accessDeniedBlock">
+    <p>
+      У вас недостаточно прав доступа. Вам поможет:
+    </p>
+    <p>
+      <span id="sql">UPDATE `user` SET `type` = 100 WHERE `id` = #id;</span>
+    </p>
+    
+  
+  </div>
+  
+</div>    
