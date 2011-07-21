@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: ff
 -- ------------------------------------------------------
--- Server version	5.1.54-1ubuntu4
+-- Server version  5.1.54-1ubuntu4
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -31,7 +31,7 @@ CREATE TABLE `dataObjectField` (
   `localName` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `type` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=639 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `dataObjectField` (
 
 LOCK TABLES `dataObjectField` WRITE;
 /*!40000 ALTER TABLE `dataObjectField` DISABLE KEYS */;
-INSERT INTO `dataObjectField` VALUES (1,'email','email',1,'0','a:6:{s:10:\"nominative\";s:5:\"email\";s:8:\"genitive\";s:5:\"email\";s:6:\"dative\";s:5:\"email\";s:8:\"accusive\";s:5:\"email\";s:8:\"creative\";s:5:\"email\";s:13:\"prepositional\";s:5:\"email\";}',0),(2,'password','password',1,'0','a:6:{s:10:\"nominative\";s:8:\"password\";s:8:\"genitive\";s:8:\"password\";s:6:\"dative\";s:8:\"password\";s:8:\"accusive\";s:8:\"password\";s:8:\"creative\";s:8:\"password\";s:13:\"prepositional\";s:8:\"password\";}',0),(3,'type','type',2,'0','a:6:{s:10:\"nominative\";s:4:\"type\";s:8:\"genitive\";s:4:\"type\";s:6:\"dative\";s:4:\"type\";s:8:\"accusive\";s:4:\"type\";s:8:\"creative\";s:4:\"type\";s:13:\"prepositional\";s:4:\"type\";}',0);
+INSERT INTO `dataObjectField` VALUES (636,'email','email',1,'0','a:6:{s:10:\"nominative\";s:5:\"email\";s:8:\"genitive\";s:5:\"email\";s:6:\"dative\";s:5:\"email\";s:8:\"accusive\";s:5:\"email\";s:8:\"creative\";s:5:\"email\";s:13:\"prepositional\";s:5:\"email\";}',0),(637,'password','password',1,'0','a:6:{s:10:\"nominative\";s:8:\"password\";s:8:\"genitive\";s:8:\"password\";s:6:\"dative\";s:8:\"password\";s:8:\"accusive\";s:8:\"password\";s:8:\"creative\";s:8:\"password\";s:13:\"prepositional\";s:8:\"password\";}',0),(638,'type','type',2,'0','a:6:{s:10:\"nominative\";s:4:\"type\";s:8:\"genitive\";s:4:\"type\";s:6:\"dative\";s:4:\"type\";s:8:\"accusive\";s:4:\"type\";s:8:\"creative\";s:4:\"type\";s:13:\"prepositional\";s:4:\"type\";}',0);
 /*!40000 ALTER TABLE `dataObjectField` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -56,7 +56,7 @@ CREATE TABLE `dataObjectMap` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `type` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -65,8 +65,60 @@ CREATE TABLE `dataObjectMap` (
 
 LOCK TABLES `dataObjectMap` WRITE;
 /*!40000 ALTER TABLE `dataObjectMap` DISABLE KEYS */;
-INSERT INTO `dataObjectMap` VALUES (1,'user',1);
+INSERT INTO `dataObjectMap` VALUES (4,'user',1);
 /*!40000 ALTER TABLE `dataObjectMap` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `file`
+--
+
+DROP TABLE IF EXISTS `file`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `file` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `md5` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `size` int(10) unsigned NOT NULL DEFAULT '0',
+  `path` text COLLATE utf8_unicode_ci NOT NULL,
+  `type` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `file`
+--
+
+LOCK TABLES `file` WRITE;
+/*!40000 ALTER TABLE `file` DISABLE KEYS */;
+/*!40000 ALTER TABLE `file` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `image`
+--
+
+DROP TABLE IF EXISTS `image`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `image` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `md5` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `fileName` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `image`
+--
+
+LOCK TABLES `image` WRITE;
+/*!40000 ALTER TABLE `image` DISABLE KEYS */;
+/*!40000 ALTER TABLE `image` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -89,7 +141,7 @@ CREATE TABLE `link_dataObjectMap_dataObjectField` (
 
 LOCK TABLES `link_dataObjectMap_dataObjectField` WRITE;
 /*!40000 ALTER TABLE `link_dataObjectMap_dataObjectField` DISABLE KEYS */;
-INSERT INTO `link_dataObjectMap_dataObjectField` VALUES (1,1),(1,2),(1,3);
+INSERT INTO `link_dataObjectMap_dataObjectField` VALUES (4,636),(4,637),(4,638);
 /*!40000 ALTER TABLE `link_dataObjectMap_dataObjectField` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -155,7 +207,7 @@ CREATE TABLE `referenceField` (
   `defaultValue` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `localName` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -179,7 +231,7 @@ CREATE TABLE `referenceMap` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `type` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -204,7 +256,7 @@ CREATE TABLE `user` (
   `email` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   `type` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -213,7 +265,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'','guest',0);
+INSERT INTO `user` VALUES (1,'','guest',0),(2,'828ae7dbab74fda342b15c06bc7c6f86','andrushka@andrushka.org',100),(3,'71d6c2d084d2144ec4be9ef9c0984094','nick.mitin@gmail.com',100);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -226,4 +278,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-05-14 20:39:09
+-- Dump completed on 2011-07-17 11:39:53

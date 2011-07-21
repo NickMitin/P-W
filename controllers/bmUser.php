@@ -43,7 +43,7 @@
         ),
         'password' => array(
           'fieldName' => 'password',
-          'dataType' => BM_VT_STRING,
+          'dataType' => BM_VT_PASSWORD,
           'defaultValue' => '0'
         ),
         'type' => array(
@@ -66,18 +66,6 @@
       {
         /*FF::AC::TOP::GETTER::{*/
         
-        /*FF::AC::GETTER_CASE::club::{*/
-        case 'clubIds':
-          if (!array_key_exists('clubIds', $this->properties))
-          {
-            $this->properties['clubIds'] = $this->getClubs(false);
-          }
-          return $this->properties['clubIds'];
-        break;
-        case 'clubs':
-          return $this->getClubs();
-        break;
-        /*FF::AC::GETTER_CASE::club::}*/
  
         /*FF::AC::TOP::GETTER::}*/
         default:
@@ -88,110 +76,6 @@
     
     /*FF::AC::TOP::REFERENCE_FUNCTIONS::{*/
     
-    /*FF::AC::REFERENCE_FUNCTIONS::club::{*/        
-        
-    public function getClubs($load = true)
-    {
-      $cacheKey = 'user_clubs_' . $this->properties['identifier'];
-      
-      $sql = "
-        SELECT 
-          `link_user_club`.`clubId` AS `identifier`
-        FROM 
-          `link_user_club`
-        WHERE 
-          `link_user_club`.`userId` = " . $this->properties['identifier'] . ";
-      ";
-      
-      return $this->getSimpleLinks($sql, $cacheKey, 'club', E_OBJECTS_NOT_FOUND, $load);
-    }
-
-    public function addClub($clubId)
-    {
-      $clubIds = $this->clubIds;
-      
-      if (!in_array($clubId, $clubIds))
-      {
-        $this->properties['clubIds'][] = $clubId;
-      }
-      
-      $this->dirty['saveClubs'] = true;
-    }
-
-    public function removeClub($clubId)
-    {
-      $clubIds = $this->clubIds;
-      
-      foreach ($clubIds as $key => $identifier)
-      {
-        if ($identifier == $clubId)
-        {
-          unset($this->properties['clubIds'][$key]);
-        }
-      }
-      
-      $this->dirty['saveClubs'] = true;
-    }
-
-    public function removeClubs()
-    {
-      $this->properties['clubIds'] = array();
-      
-      $this->dirty['saveClubs'] = true;
-    }
-
-    protected function saveClubs()
-    {
-      $dataLink = $this->application->dataLink;
-      $cacheLink = $this->application->cacheLink;
-      
-      $cacheKeysToDelete = array();
-      $cacheKeysToDelete[] = 'user_clubs_' . $this->properties['identifier']; 
-      
-      $clubIds = $this->properties['clubIds'];
-      
-      foreach ($clubIds as $clubId)
-      {
-        $cacheKeysToDelete[] = 'club_users_' . $clubId; 
-      }
-      
-      foreach ($cacheKeysToDelete as $cacheKey)
-      {
-        $cacheLink->delete($cacheKey);
-      }
-      
-      $sql = "
-        DELETE FROM 
-          `link_user_club`
-        WHERE 
-          `userId` = " . $this->properties['identifier'] . ";";
-      
-      $dataLink->query($sql);
-      
-      $insertStrings = array();
-      
-      foreach ($this->properties['clubIds'] as $identifier)
-      { 
-        $insertStrings[] = '(' . $dataLink->formatInput($this->properties['identifier'], BM_VT_INTEGER) . ", " . $dataLink->formatInput($identifier, BM_VT_INTEGER) . ')';
-      }
-      
-      if (count($insertStrings) > 0)
-      {
-        $sql = "INSERT IGNORE INTO
-                  `link_user_club`
-                  (userId, clubId)
-                VALUES
-                  " . implode(', ', $insertStrings) . ";";
-                  
-        $dataLink->query($sql);
-      }
-      
-      $this->enqueueCache('saveClubs');
-      $this->dirty['saveClubs'] = false;    
-    }
-    
-    /*FF::AC::REFERENCE_FUNCTIONS::club::}*/
-
 
     /*FF::AC::TOP::REFERENCE_FUNCTIONS::}*/
   }

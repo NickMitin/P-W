@@ -106,7 +106,8 @@
         return $checkUserDataResult;
       }
       
-      $user = new bmUser($this->application, array('email' => $email, 'password' => $password));  
+      $user = new bmUser($this->application, array('email' => $email));
+      $user->password = $password;
       unset($user);
       return $this->login($email, $password);
     }
