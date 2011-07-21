@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: ff
 -- ------------------------------------------------------
--- Server version  5.1.54-1ubuntu4
+-- Server version	5.1.54-1ubuntu4
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -31,7 +31,7 @@ CREATE TABLE `dataObjectField` (
   `localName` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `type` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=639 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=647 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `dataObjectField` (
 
 LOCK TABLES `dataObjectField` WRITE;
 /*!40000 ALTER TABLE `dataObjectField` DISABLE KEYS */;
-INSERT INTO `dataObjectField` VALUES (636,'email','email',1,'0','a:6:{s:10:\"nominative\";s:5:\"email\";s:8:\"genitive\";s:5:\"email\";s:6:\"dative\";s:5:\"email\";s:8:\"accusive\";s:5:\"email\";s:8:\"creative\";s:5:\"email\";s:13:\"prepositional\";s:5:\"email\";}',0),(637,'password','password',1,'0','a:6:{s:10:\"nominative\";s:8:\"password\";s:8:\"genitive\";s:8:\"password\";s:6:\"dative\";s:8:\"password\";s:8:\"accusive\";s:8:\"password\";s:8:\"creative\";s:8:\"password\";s:13:\"prepositional\";s:8:\"password\";}',0),(638,'type','type',2,'0','a:6:{s:10:\"nominative\";s:4:\"type\";s:8:\"genitive\";s:4:\"type\";s:6:\"dative\";s:4:\"type\";s:8:\"accusive\";s:4:\"type\";s:8:\"creative\";s:4:\"type\";s:13:\"prepositional\";s:4:\"type\";}',0);
+INSERT INTO `dataObjectField` VALUES (636,'email','email',1,'0','a:6:{s:10:\"nominative\";s:5:\"email\";s:8:\"genitive\";s:5:\"email\";s:6:\"dative\";s:5:\"email\";s:8:\"accusive\";s:5:\"email\";s:8:\"creative\";s:5:\"email\";s:13:\"prepositional\";s:5:\"email\";}',0),(637,'password','password',6,'0','a:6:{s:10:\"nominative\";s:8:\"password\";s:8:\"genitive\";s:8:\"password\";s:6:\"dative\";s:8:\"password\";s:8:\"accusive\";s:8:\"password\";s:8:\"creative\";s:8:\"password\";s:13:\"prepositional\";s:8:\"password\";}',0),(638,'type','type',2,'0','a:6:{s:10:\"nominative\";s:4:\"type\";s:8:\"genitive\";s:4:\"type\";s:6:\"dative\";s:4:\"type\";s:8:\"accusive\";s:4:\"type\";s:8:\"creative\";s:4:\"type\";s:13:\"prepositional\";s:4:\"type\";}',0),(639,'name','name',1,'','a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',0),(640,'md5','md5',1,'','a:6:{s:10:\"nominative\";s:3:\"md5\";s:8:\"genitive\";s:3:\"md5\";s:6:\"dative\";s:3:\"md5\";s:8:\"accusive\";s:3:\"md5\";s:8:\"creative\";s:3:\"md5\";s:13:\"prepositional\";s:3:\"md5\";}',0),(641,'fileName','fileName',1,'','a:6:{s:10:\"nominative\";s:8:\"fileName\";s:8:\"genitive\";s:8:\"fileName\";s:6:\"dative\";s:8:\"fileName\";s:8:\"accusive\";s:8:\"fileName\";s:8:\"creative\";s:8:\"fileName\";s:13:\"prepositional\";s:8:\"fileName\";}',0),(642,'name','name',1,'','a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',0),(643,'md5','md5',1,'','a:6:{s:10:\"nominative\";s:3:\"md5\";s:8:\"genitive\";s:3:\"md5\";s:6:\"dative\";s:3:\"md5\";s:8:\"accusive\";s:3:\"md5\";s:8:\"creative\";s:3:\"md5\";s:13:\"prepositional\";s:3:\"md5\";}',0),(644,'fileName','fileName',1,'','a:6:{s:10:\"nominative\";s:8:\"fileName\";s:8:\"genitive\";s:8:\"fileName\";s:6:\"dative\";s:8:\"fileName\";s:8:\"accusive\";s:8:\"fileName\";s:8:\"creative\";s:8:\"fileName\";s:13:\"prepositional\";s:8:\"fileName\";}',0),(645,'size','size',2,'0','a:6:{s:10:\"nominative\";s:4:\"size\";s:8:\"genitive\";s:4:\"size\";s:6:\"dative\";s:4:\"size\";s:8:\"accusive\";s:4:\"size\";s:8:\"creative\";s:4:\"size\";s:13:\"prepositional\";s:4:\"size\";}',0),(646,'type','type',1,'','a:6:{s:10:\"nominative\";s:4:\"type\";s:8:\"genitive\";s:4:\"type\";s:6:\"dative\";s:4:\"type\";s:8:\"accusive\";s:4:\"type\";s:8:\"creative\";s:4:\"type\";s:13:\"prepositional\";s:4:\"type\";}',0);
 /*!40000 ALTER TABLE `dataObjectField` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -56,7 +56,7 @@ CREATE TABLE `dataObjectMap` (
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `type` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -65,7 +65,7 @@ CREATE TABLE `dataObjectMap` (
 
 LOCK TABLES `dataObjectMap` WRITE;
 /*!40000 ALTER TABLE `dataObjectMap` DISABLE KEYS */;
-INSERT INTO `dataObjectMap` VALUES (4,'user',1);
+INSERT INTO `dataObjectMap` VALUES (4,'user',1),(5,'image',0),(6,'file',0);
 /*!40000 ALTER TABLE `dataObjectMap` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -80,11 +80,11 @@ CREATE TABLE `file` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `md5` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `fileName` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `size` int(10) unsigned NOT NULL DEFAULT '0',
-  `path` text COLLATE utf8_unicode_ci NOT NULL,
   `type` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -105,11 +105,11 @@ DROP TABLE IF EXISTS `image`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `image` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `md5` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `md5` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `fileName` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -141,7 +141,7 @@ CREATE TABLE `link_dataObjectMap_dataObjectField` (
 
 LOCK TABLES `link_dataObjectMap_dataObjectField` WRITE;
 /*!40000 ALTER TABLE `link_dataObjectMap_dataObjectField` DISABLE KEYS */;
-INSERT INTO `link_dataObjectMap_dataObjectField` VALUES (4,636),(4,637),(4,638);
+INSERT INTO `link_dataObjectMap_dataObjectField` VALUES (4,636),(4,637),(4,638),(5,639),(5,640),(5,641),(6,642),(6,643),(6,644),(6,645),(6,646);
 /*!40000 ALTER TABLE `link_dataObjectMap_dataObjectField` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -278,4 +278,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-07-17 11:39:53
+-- Dump completed on 2011-07-21 12:03:33
