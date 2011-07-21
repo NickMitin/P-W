@@ -265,7 +265,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'','guest',0),(2,'828ae7dbab74fda342b15c06bc7c6f86','andrushka@andrushka.org',100),(3,'71d6c2d084d2144ec4be9ef9c0984094','nick.mitin@gmail.com',100);
+INSERT INTO `user` VALUES (1,'','guest',0);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -278,4 +278,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2011-07-21 12:03:33
+-- Dump completed on 2011-07-21 12:11:42
