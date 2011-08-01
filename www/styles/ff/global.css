@@ -1,0 +1,34 @@
+body
+{
+  font-family: Arial;
+  margin-left: 1em;
+}
+.dataObject_name, reference_name
+{
+  font-size: 140%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.dataObject_tableCaptions, .reference_tableCaptions
+{
+  font-size: 60%;
+}
+
+.dataObject_currentPropertyName, .reference_currentPropertyName
+{
+  padding: 0 20px 0 0;
+  color: #999;
+  font-size: 12px;
+}
+.dataObject_id
+{
+  padding: 8px 20px 8px 4px;
+  color: #000;
+  font-size: 13px;
+}
+
+.dataObject_id td
+{
+  padding: 8px 0px 8px 4px;
+}
