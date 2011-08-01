@@ -132,8 +132,6 @@
       
       return $this->getComplexLinks($sql, $cacheKey, $map, E_OBJECTS_NOT_FOUND, $load);
     }
-
-    
     
     /*FF::AC::REFERENCE_FUNCTIONS::user::}*/
 
