@@ -1,0 +1,14 @@
+.clear {clear: both;}
+
+body {padding: 50px; font-family: arial; font-size: 14px;}
+
+.header {margin: 0px 0 10px 100px; font-size: 47px; text-transform: uppercase; letter-spacing: 6px; font-weight: bold; background: url('paw-logo.png') 0 11px no-repeat; height: 45px; padding-left: 125px;}
+.heading {margin: 50px 0 10px 100px; font-size: 20px; font-weight: bold;}
+.item {margin: 0 0 10px 0;}
+.item .key {float: left; width: 100px; padding-top: 7px;}
+.item .value {float: left;}
+
+input[type=text] {width: 200px; font-size: 14px; height: 24px; padding: 0 0 0 3px;}
+input[name=adminEmail] {width: 300px;}
+
+input[type=submit] {width: 150px; height: 34px; font-size: 16px; font-weight: bold; margin-top: 20px;}

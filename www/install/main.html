@@ -1,0 +1,64 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />         
+  <link rel="stylesheet" type="text/css" href="index.css" /> 
+  <title>PAW installer</title>                                                 
+</head> 
+<body> 
+  
+  <div class="header">Installer</div>
+  <div class="heading">Server</div>
+  <form action="rp.php" method="post">
+    <div class="item">
+      <div class="key">Server Root</div>
+      <div class="value"><input type="text" name="serverRoot" value="{$serverRoot}" /></div>
+      <div class="clear"> </div>
+    </div>
+    <div class="heading">Database</div>
+    <div class="item">
+      <div class="key">Hostname</div>
+      <div class="value"><input type="text" name="hostname" /></div>
+      <div class="clear"> </div>
+    </div>
+    <div class="item">
+      <div class="key">Username</div>
+      <div class="value"><input type="text" name="username" /></div>
+      <div class="clear"> </div>
+    </div>
+    <div class="item">
+      <div class="key">Password</div>
+      <div class="value"><input type="text" name="password" /></div>
+      <div class="clear"> </div>
+    </div>
+    <div class="item">
+      <div class="key">Database</div>
+      <div class="value"><input type="text" name="database" /></div>
+      <div class="clear"> </div>
+    </div>     
+    <div class="heading">Administrator</div>
+    <div class="item">
+      <div class="key">Email</div>
+      <div class="value"><input type="text" name="adminEmail" /></div>
+      <div class="clear"> </div>
+    </div>
+    <div class="item">
+      <div class="key">Password</div>
+      <div class="value"><input type="text" name="adminPassword" /></div>
+      <div class="clear"> </div>
+    </div>
+    <div class="item">
+      <div class="key">Cacher</div>
+      <div class="value"><select name="cacher">{$cachers}</select></div>
+      <div class="clear"> </div>
+    </div>
+    <div class="item">
+      <div class="key"> </div>
+      <div class="value"><input type="submit" value="Install"/></div>
+      <div class="clear"> </div>
+    </div>
+  </form>
+  
+</body> 
+</html>
