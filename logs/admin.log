@@ -1792,3 +1792,88 @@ INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`
 ALTER TABLE
                   `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
 
+-- 2012.01.27 20:32:10
+INSERT INTO `referenceField` SET `propertyName` = 'author',`fieldName` = 'author2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 9 ON DUPLICATE KEY UPDATE `propertyName` = 'author',`fieldName` = 'author2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 9;
+
+-- 2012.01.27 20:32:10
+INSERT INTO `referenceField` SET `propertyName` = 'author',`fieldName` = 'author2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 9 ON DUPLICATE KEY UPDATE `propertyName` = 'author',`fieldName` = 'author2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 9;
+
+-- 2012.01.27 20:32:10
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 9;
+
+-- 2012.01.27 20:32:10
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (7, 9);
+
+-- 2012.01.27 20:32:10
+INSERT INTO `referenceField` SET `propertyName` = 'sketch',`fieldName` = 'sketch2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"sketch\";s:8:\"genitive\";s:6:\"sketch\";s:6:\"dative\";s:6:\"sketch\";s:8:\"accusive\";s:6:\"sketch\";s:8:\"creative\";s:6:\"sketch\";s:13:\"prepositional\";s:6:\"sketch\";}',`defaultValue` = '0',`id` = 10 ON DUPLICATE KEY UPDATE `propertyName` = 'sketch',`fieldName` = 'sketch2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"sketch\";s:8:\"genitive\";s:6:\"sketch\";s:6:\"dative\";s:6:\"sketch\";s:8:\"accusive\";s:6:\"sketch\";s:8:\"creative\";s:6:\"sketch\";s:13:\"prepositional\";s:6:\"sketch\";}',`defaultValue` = '0',`id` = 10;
+
+-- 2012.01.27 20:32:10
+INSERT INTO `referenceField` SET `propertyName` = 'sketch',`fieldName` = 'sketch2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"sketch\";s:8:\"genitive\";s:6:\"sketch\";s:6:\"dative\";s:6:\"sketch\";s:8:\"accusive\";s:6:\"sketch\";s:8:\"creative\";s:6:\"sketch\";s:13:\"prepositional\";s:6:\"sketch\";}',`defaultValue` = '0',`id` = 10 ON DUPLICATE KEY UPDATE `propertyName` = 'sketch',`fieldName` = 'sketch2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"sketch\";s:8:\"genitive\";s:6:\"sketch\";s:6:\"dative\";s:6:\"sketch\";s:8:\"accusive\";s:6:\"sketch\";s:8:\"creative\";s:6:\"sketch\";s:13:\"prepositional\";s:6:\"sketch\";}',`defaultValue` = '0',`id` = 10;
+
+-- 2012.01.27 20:32:10
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 10;
+
+-- 2012.01.27 20:32:10
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (9, 10);
+
+-- 2012.01.27 20:32:10
+INSERT INTO `referenceField` SET `propertyName` = 'rating',`fieldName` = 'rating2',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"rating\";s:8:\"genitive\";s:6:\"rating\";s:6:\"dative\";s:6:\"rating\";s:8:\"accusive\";s:6:\"rating\";s:8:\"creative\";s:6:\"rating\";s:13:\"prepositional\";s:6:\"rating\";}',`defaultValue` = '0',`id` = 11 ON DUPLICATE KEY UPDATE `propertyName` = 'rating',`fieldName` = 'rating2',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"rating\";s:8:\"genitive\";s:6:\"rating\";s:6:\"dative\";s:6:\"rating\";s:8:\"accusive\";s:6:\"rating\";s:8:\"creative\";s:6:\"rating\";s:13:\"prepositional\";s:6:\"rating\";}',`defaultValue` = '0',`id` = 11;
+
+-- 2012.01.27 20:32:10
+INSERT INTO `referenceField` SET `propertyName` = 'rating',`fieldName` = 'rating2',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"rating\";s:8:\"genitive\";s:6:\"rating\";s:6:\"dative\";s:6:\"rating\";s:8:\"accusive\";s:6:\"rating\";s:8:\"creative\";s:6:\"rating\";s:13:\"prepositional\";s:6:\"rating\";}',`defaultValue` = '0',`id` = 11 ON DUPLICATE KEY UPDATE `propertyName` = 'rating',`fieldName` = 'rating2',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"rating\";s:8:\"genitive\";s:6:\"rating\";s:6:\"dative\";s:6:\"rating\";s:8:\"accusive\";s:6:\"rating\";s:8:\"creative\";s:6:\"rating\";s:13:\"prepositional\";s:6:\"rating\";}',`defaultValue` = '0',`id` = 11;
+
+-- 2012.01.27 20:32:10
+ALTER TABLE
+                  `link_author_sketch` CHANGE `authorId` `author2Id`  INT(10) UNSIGNED,  CHANGE `sketchId` `sketch2Id`  INT(10) UNSIGNED,  CHANGE `rating` `rating2`  INT(10) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 20:32:20
+INSERT INTO `referenceField` SET `propertyName` = 'author',`fieldName` = 'author2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 4 ON DUPLICATE KEY UPDATE `propertyName` = 'author',`fieldName` = 'author2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 4;
+
+-- 2012.01.27 20:32:20
+INSERT INTO `referenceField` SET `propertyName` = 'author',`fieldName` = 'author2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 4 ON DUPLICATE KEY UPDATE `propertyName` = 'author',`fieldName` = 'author2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 4;
+
+-- 2012.01.27 20:32:20
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 4;
+
+-- 2012.01.27 20:32:20
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (7, 4);
+
+-- 2012.01.27 20:32:20
+INSERT INTO `referenceField` SET `propertyName` = 'book',`fieldName` = 'book2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"book\";s:8:\"genitive\";s:4:\"book\";s:6:\"dative\";s:4:\"book\";s:8:\"accusive\";s:4:\"book\";s:8:\"creative\";s:4:\"book\";s:13:\"prepositional\";s:4:\"book\";}',`defaultValue` = '0',`id` = 5 ON DUPLICATE KEY UPDATE `propertyName` = 'book',`fieldName` = 'book2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"book\";s:8:\"genitive\";s:4:\"book\";s:6:\"dative\";s:4:\"book\";s:8:\"accusive\";s:4:\"book\";s:8:\"creative\";s:4:\"book\";s:13:\"prepositional\";s:4:\"book\";}',`defaultValue` = '0',`id` = 5;
+
+-- 2012.01.27 20:32:20
+INSERT INTO `referenceField` SET `propertyName` = 'book',`fieldName` = 'book2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"book\";s:8:\"genitive\";s:4:\"book\";s:6:\"dative\";s:4:\"book\";s:8:\"accusive\";s:4:\"book\";s:8:\"creative\";s:4:\"book\";s:13:\"prepositional\";s:4:\"book\";}',`defaultValue` = '0',`id` = 5 ON DUPLICATE KEY UPDATE `propertyName` = 'book',`fieldName` = 'book2',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"book\";s:8:\"genitive\";s:4:\"book\";s:6:\"dative\";s:4:\"book\";s:8:\"accusive\";s:4:\"book\";s:8:\"creative\";s:4:\"book\";s:13:\"prepositional\";s:4:\"book\";}',`defaultValue` = '0',`id` = 5;
+
+-- 2012.01.27 20:32:20
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 5;
+
+-- 2012.01.27 20:32:20
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (8, 5);
+
+-- 2012.01.27 20:32:20
+ALTER TABLE
+                  `link_author_book` CHANGE `authorId` `author2Id`  INT(10) UNSIGNED,  CHANGE `bookId` `book2Id`  INT(10) UNSIGNED;
+
+-- 2012.01.27 20:35:16
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 20:35:16
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+

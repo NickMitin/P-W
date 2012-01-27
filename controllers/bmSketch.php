@@ -86,22 +86,27 @@
       
       $sql = "
         SELECT 
-          `link_author_sketch`.`authorId` AS `authorId`,
-          `link_author_sketch`.`sketchId` AS `sketchId`,
-          `link_author_sketch`.`rating` AS `rating`
+          `link_author_sketch`.`author2Id` AS `authorId`,
+          `link_author_sketch`.`sketch2Id` AS `sketchId`,
+          `link_author_sketch`.`rating2` AS `rating`
         FROM 
           `link_author_sketch`
         WHERE 
-          `link_author_sketch`.`sketchId` = " . $this->properties['identifier'] . ";
+          `link_author_sketch`.`sketch2Id` = " . $this->properties['identifier'] . ";
       ";
       
       $map = array('author IS author' => 5, 'sketch IS sketch' => 5, 'rating' => 2);
       
-      // Problem here: what if $load = true? :-)
-      
-      $this->properties['oldAuthorIds'] = $this->getComplexLinks($sql, $cacheKey, $map, E_OBJECTS_NOT_FOUND, $load);
-      
-      return $this->properties['oldAuthorIds'];
+      if (!$load)
+      {
+        $this->properties['oldAuthorIds'] = $this->getComplexLinks($sql, $cacheKey, $map, E_OBJECTS_NOT_FOUND, $load);
+        
+        return $this->properties['oldAuthorIds'];
+      }
+      else
+      {
+        return $this->getComplexLinks($sql, $cacheKey, $map, E_OBJECTS_NOT_FOUND, $load);
+      }
     }
 
     

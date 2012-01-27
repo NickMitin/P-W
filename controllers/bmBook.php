@@ -86,18 +86,23 @@
       
       $sql = "
         SELECT 
-          `link_author_book`.`authorId` AS `identifier`
+          `link_author_book`.`author2Id` AS `identifier`
         FROM 
           `link_author_book`
         WHERE 
-          `link_author_book`.`bookId` = " . $this->properties['identifier'] . ";
+          `link_author_book`.`book2Id` = " . $this->properties['identifier'] . ";
       ";
       
-      // Problem here: what if $load = true? :-)
-      
-      $this->properties['oldAuthorIds'] = $this->getSimpleLinks($sql, $cacheKey, 'author', E_OBJECTS_NOT_FOUND, $load);
-      
-      return $this->properties['oldAuthorIds'];
+      if (!$load)
+      {
+        $this->properties['oldAuthorIds'] = $this->getSimpleLinks($sql, $cacheKey, 'author', E_OBJECTS_NOT_FOUND, $load);
+        
+        return $this->properties['oldAuthorIds'];
+      }
+      else
+      {
+        return $this->getSimpleLinks($sql, $cacheKey, 'author', E_OBJECTS_NOT_FOUND, $load);
+      }
     }
 
     

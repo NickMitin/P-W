@@ -98,11 +98,11 @@
       
       $sql = "
         SELECT 
-          `link_author_book`.`bookId` AS `identifier`
+          `link_author_book`.`book2Id` AS `identifier`
         FROM 
           `link_author_book`
         WHERE 
-          `link_author_book`.`authorId` = " . $this->properties['identifier'] . ";
+          `link_author_book`.`author2Id` = " . $this->properties['identifier'] . ";
       ";
       
       if (!$load)
@@ -181,8 +181,8 @@
           DELETE FROM 
             `link_author_book`
           WHERE 
-            `authorId` = " . $this->properties['identifier'] . "
-            AND `bookId` IN (" . implode(', ', $idsToDelete) . ");";
+            `author2Id` = " . $this->properties['identifier'] . "
+            AND `book2Id` IN (" . implode(', ', $idsToDelete) . ");";
         
         $dataLink->query($sql);
         
@@ -200,7 +200,7 @@
       {
         $sql = "INSERT IGNORE INTO
                   `link_author_book`
-                  (authorId, bookId)
+                  (author2Id, book2Id)
                 VALUES
                   " . implode(', ', $insertStrings) . ";";
                   
@@ -225,13 +225,13 @@
       
       $sql = "
         SELECT 
-          `link_author_sketch`.`authorId` AS `authorId`,
-          `link_author_sketch`.`sketchId` AS `sketchId`,
-          `link_author_sketch`.`rating` AS `rating`
+          `link_author_sketch`.`author2Id` AS `authorId`,
+          `link_author_sketch`.`sketch2Id` AS `sketchId`,
+          `link_author_sketch`.`rating2` AS `rating`
         FROM 
           `link_author_sketch`
         WHERE 
-          `link_author_sketch`.`authorId` = " . $this->properties['identifier'] . ";
+          `link_author_sketch`.`author2Id` = " . $this->properties['identifier'] . ";
       ";
       
       $map = array('author IS author' => 5, 'sketch IS sketch' => 5, 'rating' => 2);
@@ -314,8 +314,8 @@
           DELETE FROM 
             `link_author_sketch`
           WHERE 
-            `authorId` = " . $this->properties['identifier'] . "
-            AND `sketchId` IN (" . $this->itemImplode($itemsToDelete, 'sketchId') . ");";
+            `author2Id` = " . $this->properties['identifier'] . "
+            AND `sketch2Id` IN (" . $this->itemImplode($itemsToDelete, 'sketchId') . ");";
         
         $dataLink->query($sql);
         
@@ -333,7 +333,7 @@
       {
         $sql = "INSERT IGNORE INTO
                   `link_author_sketch`
-                  (`authorId`, `sketchId`, `rating`)
+                  (`author2Id`, `sketch2Id`, `rating2`)
                 VALUES
                   " . implode(', ', $insertStrings) . ";";
                   

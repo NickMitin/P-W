@@ -41,7 +41,7 @@
       
       $output = '';
       
-      $mode = 'complex'; // 'simple' or 'complex'
+      $mode = 'simple'; // 'simple' or 'complex'
       
       if ($mode == 'simple')
       {
