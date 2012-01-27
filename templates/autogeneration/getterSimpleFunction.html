@@ -11,5 +11,14 @@
           `{$tableName}`.`{$thisObjectFieldName}` = " . \$this->properties['identifier'] . ";
       ";
       
-      return \$this->getSimpleLinks(\$sql, \$cacheKey, '{$referencedObjectName}', E_OBJECTS_NOT_FOUND, \$load);
+      if (!\$load)
+      {
+        \$this->properties['old{$ucPropertyName}Ids'] = \$this->getSimpleLinks(\$sql, \$cacheKey, '{$referencedObjectName}', E_OBJECTS_NOT_FOUND, \$load);
+        
+        return \$this->properties['old{$ucPropertyName}Ids'];
+      }
+      else
+      {
+        return \$this->getSimpleLinks(\$sql, \$cacheKey, '{$referencedObjectName}', E_OBJECTS_NOT_FOUND, \$load);
+      }
     }

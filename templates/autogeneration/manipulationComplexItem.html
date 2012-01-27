@@ -40,11 +40,15 @@
       \$cacheKeysToDelete = array();
       \$cacheKeysToDelete[] = '{$objectName}_{$propertyName}s_' . \$this->properties['identifier']; 
       
+      \$old{$ucPropertyName}Ids = \$this->properties['old{$ucPropertyName}Ids'];
       \${$propertyName}Ids = \$this->properties['{$propertyName}Ids'];
       
-      foreach (\${$propertyName}Ids as \$item)
+      \$itemsToDelete = \$this->itemDiff(\$old{$ucPropertyName}Ids, \${$propertyName}Ids, '{$propertyName}Id');
+      \$itemsToAdd = \$this->itemDiff(\${$propertyName}Ids, \$old{$ucPropertyName}Ids, '{$propertyName}Id');
+      
+      foreach (\$itemsToDelete as \$itemToDelete)
       {
-        \${$propertyName}Id = \$item->{$propertyName}Id;
+        \${$propertyName}Id = \$itemToDelete->{$propertyName}Id;
         \$cacheKeysToDelete[] = '{$otherObjectPropertyName}_{$thisPropertyName}s_' . \${$propertyName}Id; 
       }
       
@@ -53,17 +57,21 @@
         \$cacheLink->delete(\$cacheKey);
       }
       
-      \$sql = "
-        DELETE FROM 
-          `{$tableName}`
-        WHERE 
-          `{$thisObjectFieldName}` = " . \$this->properties['identifier'] . ";";
-      
-      \$dataLink->query(\$sql);
+      if (count(\$itemsToDelete) > 0)
+      {
+        \$sql = "
+          DELETE FROM 
+            `{$tableName}`
+          WHERE 
+            `{$thisObjectFieldName}` = " . \$this->properties['identifier'] . "
+            AND `{$otherObjectFieldName}` IN (" . \$this->itemImplode(\$itemsToDelete, '{$propertyName}Id') . ");";
+        
+        \$dataLink->query(\$sql);
+      }
       
       \$insertStrings = array();
       
-      foreach (\$this->properties['{$propertyName}Ids'] as \$item)
+      foreach (\$itemsToAdd as \$item)
       { 
         \$insertStrings[] = '(' . {$insertStrings} . ')';
       }
@@ -81,5 +89,7 @@
       
       \$this->enqueueCache('save{$ucPropertyName}s');
       \$this->dirty['save{$ucPropertyName}s'] = false;    
+      
+      \$this->properties['old{$ucPropertyName}Ids'] = \$this->properties['{$propertyName}Ids'];
     }
     

@@ -36,8 +36,8 @@
 
       $this->objectName = 'image';
       $this->map = array_merge($this->map, array(
-        'name' => array(
-          'fieldName' => 'name',
+        'abc' => array(
+          'fieldName' => 'abc',
           'dataType' => BM_VT_STRING,
           'defaultValue' => ''
         ),
@@ -50,6 +50,16 @@
           'fieldName' => 'fileName',
           'dataType' => BM_VT_STRING,
           'defaultValue' => ''
+        ),
+        'status' => array(
+          'fieldName' => 'status',
+          'dataType' => BM_VT_INTEGER,
+          'defaultValue' => 0
+        ),
+        'bbb1' => array(
+          'fieldName' => 'bbb1',
+          'dataType' => BM_VT_INTEGER,
+          'defaultValue' => 0
         )
       ));
 
@@ -66,6 +76,18 @@
       {
         /*FF::AC::TOP::GETTER::{*/
         
+        /*FF::AC::GETTER_CASE::user::{*/
+        case 'userIds':
+          if (!array_key_exists('userIds', $this->properties))
+          {
+            $this->properties['userIds'] = $this->getUsers(false);
+          }
+          return $this->properties['userIds'];
+        break;
+        case 'users':
+          return $this->getUsers();
+        break;
+        /*FF::AC::GETTER_CASE::user::}*/
  
         /*FF::AC::TOP::GETTER::}*/
         default:
@@ -76,6 +98,36 @@
     
     /*FF::AC::TOP::REFERENCE_FUNCTIONS::{*/
     
+    /*FF::AC::REFERENCE_FUNCTIONS::user::{*/        
+        
+    public function getUsers($load = true)
+    {
+      $cacheKey = 'image_users_' . $this->properties['identifier'];
+      
+      $sql = "
+        SELECT 
+          `link_user_image`.`userId` AS `userId`,
+          `link_user_image`.`imageId` AS `imageId`,
+          `link_user_image`.`ab` AS `ab`
+        FROM 
+          `link_user_image`
+        WHERE 
+          `link_user_image`.`imageId` = " . $this->properties['identifier'] . ";
+      ";
+      
+      $map = array('user IS user' => 5, 'image IS image' => 5, 'ab' => 2);
+      
+      // Problem here: what if $load = true? :-)
+      
+      $this->properties['oldUserIds'] = $this->getComplexLinks($sql, $cacheKey, $map, E_OBJECTS_NOT_FOUND, $load);
+      
+      return $this->properties['oldUserIds'];
+    }
+
+    
+    
+    /*FF::AC::REFERENCE_FUNCTIONS::user::}*/
+
 
     /*FF::AC::TOP::REFERENCE_FUNCTIONS::}*/
     
@@ -85,6 +137,13 @@
     {
       
       
+      $users = $this->users;
+
+      foreach ($users as $item)
+      {
+        $item->user->removeImage($this->properties['identifier']);
+      }
+
       
       
       $this->application->cacheLink->delete($this->objectName . $this->properties['identifier']); 

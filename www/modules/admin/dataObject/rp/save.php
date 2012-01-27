@@ -218,7 +218,7 @@
       }
       
       $dataObjectMap->save();      
-      $dataObjectMap->generateFiles(C_ADMIN_ANCESTOR_PAGE);
+      $dataObjectMap->generateFiles();
       
       unset($dataObjectMap);
       

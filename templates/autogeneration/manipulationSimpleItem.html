@@ -40,11 +40,15 @@
       \$cacheKeysToDelete = array();
       \$cacheKeysToDelete[] = '{$objectName}_{$propertyName}s_' . \$this->properties['identifier']; 
       
+      \$old{$ucPropertyName}Ids = \$this->properties['old{$ucPropertyName}Ids'];
       \${$propertyName}Ids = \$this->properties['{$propertyName}Ids'];
       
-      foreach (\${$propertyName}Ids as \${$propertyName}Id)
+      \$idsToDelete = array_diff(\$old{$ucPropertyName}Ids, \${$propertyName}Ids);
+      \$idsToAdd = array_diff(\${$propertyName}Ids, \$old{$ucPropertyName}Ids);
+      
+      foreach (\$idsToDelete as \$idToDelete)
       {
-        \$cacheKeysToDelete[] = '{$otherObjectPropertyName}_{$objectName}s_' . \${$propertyName}Id; 
+        \$cacheKeysToDelete[] = '{$otherObjectPropertyName}_{$objectName}s_' . \$idToDelete;
       }
       
       foreach (\$cacheKeysToDelete as \$cacheKey)
@@ -52,17 +56,21 @@
         \$cacheLink->delete(\$cacheKey);
       }
       
-      \$sql = "
-        DELETE FROM 
-          `{$tableName}`
-        WHERE 
-          `{$thisObjectFieldName}` = " . \$this->properties['identifier'] . ";";
-      
-      \$dataLink->query(\$sql);
+      if (count(\$idsToDelete) > 0)
+      {
+        \$sql = "
+          DELETE FROM 
+            `{$tableName}`
+          WHERE 
+            `{$thisObjectFieldName}` = " . \$this->properties['identifier'] . "
+            AND `{$otherObjectFieldName}` IN (" . implode(', ', \$idsToDelete) . ");";
+        
+        \$dataLink->query(\$sql);
+      }
       
       \$insertStrings = array();
       
-      foreach (\$this->properties['{$propertyName}Ids'] as \$identifier)
+      foreach (\$idsToAdd as \$identifier)
       { 
         \$insertStrings[] = '(' . \$dataLink->formatInput(\$this->properties['identifier'], BM_VT_INTEGER) . ", " . \$dataLink->formatInput(\$identifier, BM_VT_INTEGER) . ')';
       }
@@ -79,6 +87,8 @@
       }
       
       \$this->enqueueCache('save{$ucPropertyName}s');
-      \$this->dirty['save{$ucPropertyName}s'] = false;    
+      \$this->dirty['save{$ucPropertyName}s'] = false;
+      
+      \$this->properties['old{$ucPropertyName}Ids'] = \$this->properties['{$propertyName}Ids'];
     }
     
