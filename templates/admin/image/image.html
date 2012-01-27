@@ -1,0 +1,44 @@
+      <div id="mainBody">
+        <form method="post" action="/admin/image/rp/save/$this->imageId">
+          <div class="mainTitle">
+            <h1>$imageName</h1>
+            <div id="objectName" style="display: none;">image</div>
+            <div class="mainTitleInfo"></div>
+          </div>
+          <div class="mainText">
+            <div class="editGrid clearTop">
+              <!-- FF::AC::EDITORS::{ --> 
+                    <div class="editGridItem">
+                <div class="editGridLabel">name:</div>
+                <div class="editGridHolder"><input type="text" name="name" value="$imageName" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+                    <div class="editGridItem">
+                <div class="editGridLabel">md5:</div>
+                <div class="editGridHolder"><input type="text" name="md5" value="$imageMd5" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+                    <div class="editGridItem">
+                <div class="editGridLabel">fileName:</div>
+                <div class="editGridHolder"><input type="text" name="fileName" value="$imageFileName" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+                    <div class="editGridItem">
+                <div class="editGridLabel">status:</div>
+                <div class="editGridHolder"><input type="text" name="status" value="$imageStatus" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+      <!-- FF::AC::EDITORS::} -->
+            </div>
+            <div class="greyBox">
+              <div style="margin-left: 22%;"><input type="submit" value="Сохранить" /></div>
+              <div style="clear: left;"></div>
+            </div>
+          </div>
+        </form> 
+      </div>
+      

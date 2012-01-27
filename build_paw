@@ -1,0 +1,6 @@
+#!/bin/bash
+git commit -a -m "$1"
+git push
+./build_install
+./build_update
+./build_update 1

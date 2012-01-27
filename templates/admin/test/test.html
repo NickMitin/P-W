@@ -1,0 +1,26 @@
+      <div id="mainBody">
+        <form method="post" action="/admin/test/rp/save/$this->testId">
+          <div class="mainTitle">
+            <h1>$testName</h1>
+            <div id="objectName" style="display: none;">test</div>
+            <div class="mainTitleInfo"></div>
+          </div>
+          <div class="mainText">
+            <div class="editGrid clearTop">
+              <!-- FF::AC::EDITORS::{ --> 
+                    <div class="editGridItem">
+                <div class="editGridLabel">val:</div>
+                <div class="editGridHolder"><input type="text" name="val" value="$testVal" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+      <!-- FF::AC::EDITORS::} -->
+            </div>
+            <div class="greyBox">
+              <div style="margin-left: 22%;"><input type="submit" value="Сохранить" /></div>
+              <div style="clear: left;"></div>
+            </div>
+          </div>
+        </form> 
+      </div>
+      

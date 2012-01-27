@@ -1,0 +1,1794 @@
+-- 2011.12.29 18:45:39
+INSERT INTO `dataObjectField` SET `propertyName` = 'abc',`fieldName` = 'abc',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"abc\";s:8:\"genitive\";s:3:\"abc\";s:6:\"dative\";s:3:\"abc\";s:8:\"accusive\";s:3:\"abc\";s:8:\"creative\";s:3:\"abc\";s:13:\"prepositional\";s:3:\"abc\";}',`defaultValue` = '',`type` = 0,`id` = 639 ON DUPLICATE KEY UPDATE `propertyName` = 'abc',`fieldName` = 'abc',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"abc\";s:8:\"genitive\";s:3:\"abc\";s:6:\"dative\";s:3:\"abc\";s:8:\"accusive\";s:3:\"abc\";s:8:\"creative\";s:3:\"abc\";s:13:\"prepositional\";s:3:\"abc\";}',`defaultValue` = '',`type` = 0,`id` = 639;
+
+-- 2011.12.29 18:45:44
+INSERT INTO `dataObjectField` SET `propertyName` = 'md5',`fieldName` = 'md5',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"md5\";s:8:\"genitive\";s:3:\"md5\";s:6:\"dative\";s:3:\"md5\";s:8:\"accusive\";s:3:\"md5\";s:8:\"creative\";s:3:\"md5\";s:13:\"prepositional\";s:3:\"md5\";}',`defaultValue` = '',`type` = 0,`id` = 640 ON DUPLICATE KEY UPDATE `propertyName` = 'md5',`fieldName` = 'md5',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"md5\";s:8:\"genitive\";s:3:\"md5\";s:6:\"dative\";s:3:\"md5\";s:8:\"accusive\";s:3:\"md5\";s:8:\"creative\";s:3:\"md5\";s:13:\"prepositional\";s:3:\"md5\";}',`defaultValue` = '',`type` = 0,`id` = 640;
+
+-- 2011.12.29 18:45:44
+INSERT INTO `dataObjectField` SET `propertyName` = 'fileName',`fieldName` = 'fileName',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:8:\"fileName\";s:8:\"genitive\";s:8:\"fileName\";s:6:\"dative\";s:8:\"fileName\";s:8:\"accusive\";s:8:\"fileName\";s:8:\"creative\";s:8:\"fileName\";s:13:\"prepositional\";s:8:\"fileName\";}',`defaultValue` = '',`type` = 0,`id` = 641 ON DUPLICATE KEY UPDATE `propertyName` = 'fileName',`fieldName` = 'fileName',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:8:\"fileName\";s:8:\"genitive\";s:8:\"fileName\";s:6:\"dative\";s:8:\"fileName\";s:8:\"accusive\";s:8:\"fileName\";s:8:\"creative\";s:8:\"fileName\";s:13:\"prepositional\";s:8:\"fileName\";}',`defaultValue` = '',`type` = 0,`id` = 641;
+
+-- 2011.12.29 18:45:49
+INSERT INTO `dataObjectField` SET `propertyName` = 'status',`fieldName` = 'status',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"status\";s:8:\"genitive\";s:6:\"status\";s:6:\"dative\";s:6:\"status\";s:8:\"accusive\";s:6:\"status\";s:8:\"creative\";s:6:\"status\";s:13:\"prepositional\";s:6:\"status\";}',`defaultValue` = '0',`type` = 0,`id` = 647 ON DUPLICATE KEY UPDATE `propertyName` = 'status',`fieldName` = 'status',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"status\";s:8:\"genitive\";s:6:\"status\";s:6:\"dative\";s:6:\"status\";s:8:\"accusive\";s:6:\"status\";s:8:\"creative\";s:6:\"status\";s:13:\"prepositional\";s:6:\"status\";}',`defaultValue` = '0',`type` = 0,`id` = 647;
+
+-- 2011.12.29 18:45:52
+INSERT INTO `dataObjectField` SET `propertyName` = 'bbb',`fieldName` = 'bbb',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"bbb\";s:8:\"genitive\";s:3:\"bbb\";s:6:\"dative\";s:3:\"bbb\";s:8:\"accusive\";s:3:\"bbb\";s:8:\"creative\";s:3:\"bbb\";s:13:\"prepositional\";s:3:\"bbb\";}',`defaultValue` = '0',`type` = 0,`id` = 650 ON DUPLICATE KEY UPDATE `propertyName` = 'bbb',`fieldName` = 'bbb',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"bbb\";s:8:\"genitive\";s:3:\"bbb\";s:6:\"dative\";s:3:\"bbb\";s:8:\"accusive\";s:3:\"bbb\";s:8:\"creative\";s:3:\"bbb\";s:13:\"prepositional\";s:3:\"bbb\";}',`defaultValue` = '0',`type` = 0,`id` = 650;
+
+-- 2011.12.29 18:45:52
+INSERT INTO `dataObjectField` SET `propertyName` = 'bbb',`fieldName` = 'bbb',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"bbb\";s:8:\"genitive\";s:3:\"bbb\";s:6:\"dative\";s:3:\"bbb\";s:8:\"accusive\";s:3:\"bbb\";s:8:\"creative\";s:3:\"bbb\";s:13:\"prepositional\";s:3:\"bbb\";}',`defaultValue` = '0',`type` = 0,`id` = 650 ON DUPLICATE KEY UPDATE `propertyName` = 'bbb',`fieldName` = 'bbb',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"bbb\";s:8:\"genitive\";s:3:\"bbb\";s:6:\"dative\";s:3:\"bbb\";s:8:\"accusive\";s:3:\"bbb\";s:8:\"creative\";s:3:\"bbb\";s:13:\"prepositional\";s:3:\"bbb\";}',`defaultValue` = '0',`type` = 0,`id` = 650;
+
+-- 2011.12.29 18:45:52
+ALTER TABLE
+                  `image`CHANGE `abc` `bbb`  INT(10) NOT NULL DEFAULT '0';
+
+-- 2011.12.29 18:46:07
+INSERT INTO `dataObjectField` SET `propertyName` = 'abc',`fieldName` = 'abc',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"abc\";s:8:\"genitive\";s:3:\"abc\";s:6:\"dative\";s:3:\"abc\";s:8:\"accusive\";s:3:\"abc\";s:8:\"creative\";s:3:\"abc\";s:13:\"prepositional\";s:3:\"abc\";}',`defaultValue` = '',`type` = 0,`id` = 639 ON DUPLICATE KEY UPDATE `propertyName` = 'abc',`fieldName` = 'abc',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"abc\";s:8:\"genitive\";s:3:\"abc\";s:6:\"dative\";s:3:\"abc\";s:8:\"accusive\";s:3:\"abc\";s:8:\"creative\";s:3:\"abc\";s:13:\"prepositional\";s:3:\"abc\";}',`defaultValue` = '',`type` = 0,`id` = 639;
+
+-- 2011.12.29 18:46:12
+INSERT INTO `dataObjectField` SET `propertyName` = 'md5',`fieldName` = 'md5',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"md5\";s:8:\"genitive\";s:3:\"md5\";s:6:\"dative\";s:3:\"md5\";s:8:\"accusive\";s:3:\"md5\";s:8:\"creative\";s:3:\"md5\";s:13:\"prepositional\";s:3:\"md5\";}',`defaultValue` = '',`type` = 0,`id` = 640 ON DUPLICATE KEY UPDATE `propertyName` = 'md5',`fieldName` = 'md5',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"md5\";s:8:\"genitive\";s:3:\"md5\";s:6:\"dative\";s:3:\"md5\";s:8:\"accusive\";s:3:\"md5\";s:8:\"creative\";s:3:\"md5\";s:13:\"prepositional\";s:3:\"md5\";}',`defaultValue` = '',`type` = 0,`id` = 640;
+
+-- 2011.12.29 18:46:12
+INSERT INTO `dataObjectField` SET `propertyName` = 'fileName',`fieldName` = 'fileName',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:8:\"fileName\";s:8:\"genitive\";s:8:\"fileName\";s:6:\"dative\";s:8:\"fileName\";s:8:\"accusive\";s:8:\"fileName\";s:8:\"creative\";s:8:\"fileName\";s:13:\"prepositional\";s:8:\"fileName\";}',`defaultValue` = '',`type` = 0,`id` = 641 ON DUPLICATE KEY UPDATE `propertyName` = 'fileName',`fieldName` = 'fileName',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:8:\"fileName\";s:8:\"genitive\";s:8:\"fileName\";s:6:\"dative\";s:8:\"fileName\";s:8:\"accusive\";s:8:\"fileName\";s:8:\"creative\";s:8:\"fileName\";s:13:\"prepositional\";s:8:\"fileName\";}',`defaultValue` = '',`type` = 0,`id` = 641;
+
+-- 2011.12.29 18:46:12
+INSERT INTO `dataObjectField` SET `propertyName` = 'status',`fieldName` = 'status',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"status\";s:8:\"genitive\";s:6:\"status\";s:6:\"dative\";s:6:\"status\";s:8:\"accusive\";s:6:\"status\";s:8:\"creative\";s:6:\"status\";s:13:\"prepositional\";s:6:\"status\";}',`defaultValue` = '0',`type` = 0,`id` = 647 ON DUPLICATE KEY UPDATE `propertyName` = 'status',`fieldName` = 'status',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"status\";s:8:\"genitive\";s:6:\"status\";s:6:\"dative\";s:6:\"status\";s:8:\"accusive\";s:6:\"status\";s:8:\"creative\";s:6:\"status\";s:13:\"prepositional\";s:6:\"status\";}',`defaultValue` = '0',`type` = 0,`id` = 647;
+
+-- 2011.12.29 18:46:12
+INSERT INTO `dataObjectField` SET `propertyName` = 'bbb1',`fieldName` = 'bbb1',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"bbb1\";s:8:\"genitive\";s:4:\"bbb1\";s:6:\"dative\";s:4:\"bbb1\";s:8:\"accusive\";s:4:\"bbb1\";s:8:\"creative\";s:4:\"bbb1\";s:13:\"prepositional\";s:4:\"bbb1\";}',`defaultValue` = '0',`type` = 0,`id` = 650 ON DUPLICATE KEY UPDATE `propertyName` = 'bbb1',`fieldName` = 'bbb1',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"bbb1\";s:8:\"genitive\";s:4:\"bbb1\";s:6:\"dative\";s:4:\"bbb1\";s:8:\"accusive\";s:4:\"bbb1\";s:8:\"creative\";s:4:\"bbb1\";s:13:\"prepositional\";s:4:\"bbb1\";}',`defaultValue` = '0',`type` = 0,`id` = 650;
+
+-- 2011.12.29 18:46:12
+INSERT INTO `dataObjectField` SET `propertyName` = 'bbb1',`fieldName` = 'bbb1',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"bbb1\";s:8:\"genitive\";s:4:\"bbb1\";s:6:\"dative\";s:4:\"bbb1\";s:8:\"accusive\";s:4:\"bbb1\";s:8:\"creative\";s:4:\"bbb1\";s:13:\"prepositional\";s:4:\"bbb1\";}',`defaultValue` = '0',`type` = 0,`id` = 650 ON DUPLICATE KEY UPDATE `propertyName` = 'bbb1',`fieldName` = 'bbb1',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"bbb1\";s:8:\"genitive\";s:4:\"bbb1\";s:6:\"dative\";s:4:\"bbb1\";s:8:\"accusive\";s:4:\"bbb1\";s:8:\"creative\";s:4:\"bbb1\";s:13:\"prepositional\";s:4:\"bbb1\";}',`defaultValue` = '0',`type` = 0,`id` = 650;
+
+-- 2011.12.29 18:46:12
+ALTER TABLE
+                  `image`CHANGE `bbb` `bbb1`  INT(10) NOT NULL DEFAULT '0';
+
+-- 2011.12.29 21:18:19
+CREATE TABLE `newObject` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.29 21:18:19
+INSERT INTO `dataObjectMap` SET `name` = 'newObject',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'newObject',`type` = 0,`id` = 0;
+
+-- 2011.12.29 21:20:14
+CREATE TABLE `newObject2` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.29 21:20:14
+INSERT INTO `dataObjectMap` SET `name` = 'newObject2',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'newObject2',`type` = 0,`id` = 0;
+
+-- 2011.12.29 21:21:22
+CREATE TABLE `newObject3` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.29 21:21:22
+INSERT INTO `dataObjectMap` SET `name` = 'newObject3',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'newObject3',`type` = 0,`id` = 0;
+
+-- 2011.12.29 21:26:49
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 9;
+
+-- 2011.12.29 21:26:49
+DELETE FROM `dataObjectMap` WHERE `id` = 9;
+
+-- 2011.12.29 21:26:49
+DROP TABLE `newObject3`;
+
+-- 2011.12.29 21:26:52
+CREATE TABLE `newObject3` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.29 21:26:52
+INSERT INTO `dataObjectMap` SET `name` = 'newObject3',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'newObject3',`type` = 0,`id` = 0;
+
+-- 2011.12.30 13:25:11
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 13:25:11
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 18:04:35
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 11;
+
+-- 2011.12.30 18:04:35
+DELETE FROM `dataObjectMap` WHERE `id` = 11;
+
+-- 2011.12.30 18:04:45
+CREATE TABLE IF NOT EXISTS `abc2` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 18:04:45
+INSERT INTO `dataObjectMap` SET `name` = 'abc2',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'abc2',`type` = 0,`id` = 0;
+
+-- 2011.12.30 18:14:16
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 12;
+
+-- 2011.12.30 18:14:16
+DELETE FROM `dataObjectMap` WHERE `id` = 12;
+
+-- 2011.12.30 18:14:24
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 18:14:24
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 18:28:36
+INSERT INTO `dataObjectField` SET `propertyName` = 'aa',`fieldName` = 'bb',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:2:\"cc\";s:8:\"genitive\";s:2:\"cc\";s:6:\"dative\";s:2:\"cc\";s:8:\"accusive\";s:2:\"cc\";s:8:\"creative\";s:2:\"cc\";s:13:\"prepositional\";s:2:\"cc\";}',`defaultValue` = '0',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'aa',`fieldName` = 'bb',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:2:\"cc\";s:8:\"genitive\";s:2:\"cc\";s:6:\"dative\";s:2:\"cc\";s:8:\"accusive\";s:2:\"cc\";s:8:\"creative\";s:2:\"cc\";s:13:\"prepositional\";s:2:\"cc\";}',`defaultValue` = '0',`type` = 0,`id` = 0;
+
+-- 2011.12.30 18:28:36
+INSERT INTO `dataObjectField` SET `propertyName` = 'aa',`fieldName` = 'bb',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:2:\"cc\";s:8:\"genitive\";s:2:\"cc\";s:6:\"dative\";s:2:\"cc\";s:8:\"accusive\";s:2:\"cc\";s:8:\"creative\";s:2:\"cc\";s:13:\"prepositional\";s:2:\"cc\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'aa',`fieldName` = 'bb',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:2:\"cc\";s:8:\"genitive\";s:2:\"cc\";s:6:\"dative\";s:2:\"cc\";s:8:\"accusive\";s:2:\"cc\";s:8:\"creative\";s:2:\"cc\";s:13:\"prepositional\";s:2:\"cc\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2011.12.30 18:28:37
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 13;
+
+-- 2011.12.30 18:28:37
+INSERT IGNORE INTO
+                  `link_dataObjectMap_dataObjectField`
+                  (`dataObjectMapId`, `dataObjectFieldId`)
+                VALUES
+                  (13, 651);
+
+-- 2011.12.30 18:28:37
+ALTER TABLE
+                  `new4`ADD COLUMN `bb`  INT(10) NOT NULL DEFAULT '0';
+
+-- 2011.12.30 19:32:29
+RENAME TABLE `new4` TO `new4555`;
+
+-- 2011.12.30 19:32:34
+RENAME TABLE `new4555` TO `new455511`;
+
+-- 2011.12.30 19:32:37
+CREATE TABLE IF NOT EXISTS `hhh` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:32:37
+INSERT INTO `dataObjectMap` SET `name` = 'hhh',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'hhh',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:32:58
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 14;
+
+-- 2011.12.30 19:32:58
+DELETE FROM `dataObjectMap` WHERE `id` = 14;
+
+-- 2011.12.30 19:32:58
+DROP TABLE `hhh`;
+
+-- 2011.12.30 19:33:00
+CREATE TABLE IF NOT EXISTS `sdfsdf` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:33:00
+INSERT INTO `dataObjectMap` SET `name` = 'sdfsdf',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfsdf',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:33:02
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 15;
+
+-- 2011.12.30 19:33:02
+DELETE FROM `dataObjectMap` WHERE `id` = 15;
+
+-- 2011.12.30 19:33:02
+DROP TABLE `sdfsdf`;
+
+-- 2011.12.30 19:33:04
+CREATE TABLE IF NOT EXISTS `sdfs` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:33:04
+INSERT INTO `dataObjectMap` SET `name` = 'sdfs',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfs',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:33:07
+RENAME TABLE `sdfs` TO `sdfsf2222`;
+
+-- 2011.12.30 19:33:09
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 16;
+
+-- 2011.12.30 19:33:09
+DELETE FROM `dataObjectMap` WHERE `id` = 16;
+
+-- 2011.12.30 19:33:09
+DROP TABLE `sdfsf2222`;
+
+-- 2011.12.30 19:34:49
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:34:49
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:34:49
+CREATE TABLE IF NOT EXISTS `abc2` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:34:49
+INSERT INTO `dataObjectMap` SET `name` = 'abc2',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'abc2',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:34:50
+RENAME TABLE `new4` TO `new4555`;
+
+-- 2011.12.30 19:37:07
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:37:07
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:38:25
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:38:25
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:39:32
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:39:32
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:39:32
+RENAME TABLE `new4` TO `new4555`;
+
+-- 2011.12.30 19:39:32
+RENAME TABLE `new4555` TO `new455511`;
+
+-- 2011.12.30 19:39:32
+CREATE TABLE IF NOT EXISTS `hhh` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:39:32
+INSERT INTO `dataObjectMap` SET `name` = 'hhh',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'hhh',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:39:33
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 22;
+
+-- 2011.12.30 19:39:33
+DELETE FROM `dataObjectMap` WHERE `id` = 22;
+
+-- 2011.12.30 19:39:33
+DROP TABLE `hhh`;
+
+-- 2011.12.30 19:39:33
+CREATE TABLE IF NOT EXISTS `sdfsdf` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:39:33
+INSERT INTO `dataObjectMap` SET `name` = 'sdfsdf',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfsdf',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:39:33
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 23;
+
+-- 2011.12.30 19:39:33
+DELETE FROM `dataObjectMap` WHERE `id` = 23;
+
+-- 2011.12.30 19:39:33
+DROP TABLE `sdfsdf`;
+
+-- 2011.12.30 19:39:33
+CREATE TABLE IF NOT EXISTS `sdfs` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:39:33
+INSERT INTO `dataObjectMap` SET `name` = 'sdfs',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfs',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:39:33
+RENAME TABLE `sdfs` TO `sdfsf2222`;
+
+-- 2011.12.30 19:39:33
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 24;
+
+-- 2011.12.30 19:39:33
+DELETE FROM `dataObjectMap` WHERE `id` = 24;
+
+-- 2011.12.30 19:39:33
+DROP TABLE `sdfsf2222`;
+
+-- 2011.12.30 19:39:51
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:39:51
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:41:00
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:41:00
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:41:06
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:41:06
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:44:02
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:44:02
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:44:03
+CREATE TABLE IF NOT EXISTS `hhh` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:44:03
+INSERT INTO `dataObjectMap` SET `name` = 'hhh',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'hhh',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:44:03
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 29;
+
+-- 2011.12.30 19:44:03
+DELETE FROM `dataObjectMap` WHERE `id` = 29;
+
+-- 2011.12.30 19:44:03
+DROP TABLE `hhh`;
+
+-- 2011.12.30 19:44:03
+CREATE TABLE IF NOT EXISTS `sdfsdf` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:44:03
+INSERT INTO `dataObjectMap` SET `name` = 'sdfsdf',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfsdf',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:44:03
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 30;
+
+-- 2011.12.30 19:44:03
+DELETE FROM `dataObjectMap` WHERE `id` = 30;
+
+-- 2011.12.30 19:44:04
+DROP TABLE `sdfsdf`;
+
+-- 2011.12.30 19:44:04
+CREATE TABLE IF NOT EXISTS `sdfs` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:44:04
+INSERT INTO `dataObjectMap` SET `name` = 'sdfs',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfs',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:44:04
+RENAME TABLE `sdfs` TO `sdfsf2222`;
+
+-- 2011.12.30 19:44:04
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 31;
+
+-- 2011.12.30 19:44:04
+DELETE FROM `dataObjectMap` WHERE `id` = 31;
+
+-- 2011.12.30 19:44:04
+DROP TABLE `sdfsf2222`;
+
+-- 2011.12.30 19:44:41
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:44:41
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:44:42
+CREATE TABLE IF NOT EXISTS `hhh` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:44:42
+INSERT INTO `dataObjectMap` SET `name` = 'hhh',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'hhh',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:44:42
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 33;
+
+-- 2011.12.30 19:44:42
+DELETE FROM `dataObjectMap` WHERE `id` = 33;
+
+-- 2011.12.30 19:44:42
+DROP TABLE `hhh`;
+
+-- 2011.12.30 19:44:42
+CREATE TABLE IF NOT EXISTS `sdfsdf` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:44:42
+INSERT INTO `dataObjectMap` SET `name` = 'sdfsdf',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfsdf',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:44:42
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 34;
+
+-- 2011.12.30 19:44:42
+DELETE FROM `dataObjectMap` WHERE `id` = 34;
+
+-- 2011.12.30 19:44:42
+DROP TABLE `sdfsdf`;
+
+-- 2011.12.30 19:44:42
+CREATE TABLE IF NOT EXISTS `sdfs` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:44:42
+INSERT INTO `dataObjectMap` SET `name` = 'sdfs',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfs',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:44:43
+RENAME TABLE `sdfs` TO `sdfsf2222`;
+
+-- 2011.12.30 19:44:43
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 35;
+
+-- 2011.12.30 19:44:43
+DELETE FROM `dataObjectMap` WHERE `id` = 35;
+
+-- 2011.12.30 19:44:43
+DROP TABLE `sdfsf2222`;
+
+-- 2011.12.30 19:45:43
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:45:43
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:45:43
+CREATE TABLE IF NOT EXISTS `hhh` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:45:43
+INSERT INTO `dataObjectMap` SET `name` = 'hhh',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'hhh',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:45:43
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 37;
+
+-- 2011.12.30 19:45:43
+DELETE FROM `dataObjectMap` WHERE `id` = 37;
+
+-- 2011.12.30 19:45:43
+DROP TABLE `hhh`;
+
+-- 2011.12.30 19:45:43
+CREATE TABLE IF NOT EXISTS `sdfsdf` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:45:43
+INSERT INTO `dataObjectMap` SET `name` = 'sdfsdf',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfsdf',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:45:43
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 38;
+
+-- 2011.12.30 19:45:43
+DELETE FROM `dataObjectMap` WHERE `id` = 38;
+
+-- 2011.12.30 19:45:43
+DROP TABLE `sdfsdf`;
+
+-- 2011.12.30 19:45:44
+CREATE TABLE IF NOT EXISTS `sdfs` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:45:44
+INSERT INTO `dataObjectMap` SET `name` = 'sdfs',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfs',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:45:44
+RENAME TABLE `sdfs` TO `sdfsf2222`;
+
+-- 2011.12.30 19:45:44
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 39;
+
+-- 2011.12.30 19:45:44
+DELETE FROM `dataObjectMap` WHERE `id` = 39;
+
+-- 2011.12.30 19:45:44
+DROP TABLE `sdfsf2222`;
+
+-- 2011.12.30 19:46:44
+CREATE TABLE IF NOT EXISTS `hhh` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:46:44
+INSERT INTO `dataObjectMap` SET `name` = 'hhh',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'hhh',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:46:44
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 40;
+
+-- 2011.12.30 19:46:44
+DELETE FROM `dataObjectMap` WHERE `id` = 40;
+
+-- 2011.12.30 19:46:44
+DROP TABLE `hhh`;
+
+-- 2011.12.30 19:46:44
+CREATE TABLE IF NOT EXISTS `sdfsdf` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:46:44
+INSERT INTO `dataObjectMap` SET `name` = 'sdfsdf',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfsdf',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:46:44
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 41;
+
+-- 2011.12.30 19:46:44
+DELETE FROM `dataObjectMap` WHERE `id` = 41;
+
+-- 2011.12.30 19:46:44
+DROP TABLE `sdfsdf`;
+
+-- 2011.12.30 19:46:44
+CREATE TABLE IF NOT EXISTS `sdfs` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:46:44
+INSERT INTO `dataObjectMap` SET `name` = 'sdfs',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfs',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:46:44
+RENAME TABLE `sdfs` TO `sdfsf2222`;
+
+-- 2011.12.30 19:46:44
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 42;
+
+-- 2011.12.30 19:46:44
+DELETE FROM `dataObjectMap` WHERE `id` = 42;
+
+-- 2011.12.30 19:46:44
+DROP TABLE `sdfsf2222`;
+
+-- 2011.12.30 19:47:24
+CREATE TABLE IF NOT EXISTS `hhh` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:47:24
+INSERT INTO `dataObjectMap` SET `name` = 'hhh',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'hhh',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:47:24
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 43;
+
+-- 2011.12.30 19:47:24
+DELETE FROM `dataObjectMap` WHERE `id` = 43;
+
+-- 2011.12.30 19:47:24
+DROP TABLE `hhh`;
+
+-- 2011.12.30 19:47:24
+CREATE TABLE IF NOT EXISTS `sdfsdf` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:47:24
+INSERT INTO `dataObjectMap` SET `name` = 'sdfsdf',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfsdf',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:47:24
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 44;
+
+-- 2011.12.30 19:47:24
+DELETE FROM `dataObjectMap` WHERE `id` = 44;
+
+-- 2011.12.30 19:47:24
+DROP TABLE `sdfsdf`;
+
+-- 2011.12.30 19:47:24
+CREATE TABLE IF NOT EXISTS `sdfs` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:47:24
+INSERT INTO `dataObjectMap` SET `name` = 'sdfs',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfs',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:47:24
+RENAME TABLE `sdfs` TO `sdfsf2222`;
+
+-- 2011.12.30 19:47:24
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 45;
+
+-- 2011.12.30 19:47:24
+DELETE FROM `dataObjectMap` WHERE `id` = 45;
+
+-- 2011.12.30 19:47:24
+DROP TABLE `sdfsf2222`;
+
+-- 2011.12.30 19:47:55
+CREATE TABLE IF NOT EXISTS `hhh` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:47:55
+INSERT INTO `dataObjectMap` SET `name` = 'hhh',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'hhh',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:47:55
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 46;
+
+-- 2011.12.30 19:47:55
+DELETE FROM `dataObjectMap` WHERE `id` = 46;
+
+-- 2011.12.30 19:47:55
+DROP TABLE `hhh`;
+
+-- 2011.12.30 19:47:55
+CREATE TABLE IF NOT EXISTS `sdfsdf` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:47:55
+INSERT INTO `dataObjectMap` SET `name` = 'sdfsdf',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfsdf',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:47:55
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 47;
+
+-- 2011.12.30 19:47:55
+DELETE FROM `dataObjectMap` WHERE `id` = 47;
+
+-- 2011.12.30 19:47:55
+DROP TABLE `sdfsdf`;
+
+-- 2011.12.30 19:47:55
+CREATE TABLE IF NOT EXISTS `sdfs` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:47:55
+INSERT INTO `dataObjectMap` SET `name` = 'sdfs',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfs',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:47:55
+RENAME TABLE `sdfs` TO `sdfsf2222`;
+
+-- 2011.12.30 19:47:55
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 48;
+
+-- 2011.12.30 19:47:55
+DELETE FROM `dataObjectMap` WHERE `id` = 48;
+
+-- 2011.12.30 19:47:55
+DROP TABLE `sdfsf2222`;
+
+-- 2011.12.30 19:48:09
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 7;
+
+-- 2011.12.30 19:48:09
+DELETE FROM `dataObjectMap` WHERE `id` = 7;
+
+-- 2011.12.30 19:48:09
+DROP TABLE `newObject`;
+
+-- 2011.12.30 19:48:10
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 8;
+
+-- 2011.12.30 19:48:10
+DELETE FROM `dataObjectMap` WHERE `id` = 8;
+
+-- 2011.12.30 19:48:10
+DROP TABLE `newObject2`;
+
+-- 2011.12.30 19:48:10
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 10;
+
+-- 2011.12.30 19:48:10
+DELETE FROM `dataObjectMap` WHERE `id` = 10;
+
+-- 2011.12.30 19:48:10
+DROP TABLE `newObject3`;
+
+-- 2011.12.30 19:48:11
+DELETE FROM `dataObjectField` WHERE `id` = 651;
+
+-- 2011.12.30 19:48:11
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 13;
+
+-- 2011.12.30 19:48:11
+DELETE FROM `dataObjectMap` WHERE `id` = 13;
+
+-- 2011.12.30 19:48:11
+DROP TABLE `new455511`;
+
+-- 2011.12.30 19:48:11
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 17;
+
+-- 2011.12.30 19:48:11
+DELETE FROM `dataObjectMap` WHERE `id` = 17;
+
+-- 2011.12.30 19:48:12
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 18;
+
+-- 2011.12.30 19:48:12
+DELETE FROM `dataObjectMap` WHERE `id` = 18;
+
+-- 2011.12.30 19:48:12
+DROP TABLE `abc2`;
+
+-- 2011.12.30 19:48:12
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 19;
+
+-- 2011.12.30 19:48:12
+DELETE FROM `dataObjectMap` WHERE `id` = 19;
+
+-- 2011.12.30 19:48:12
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 20;
+
+-- 2011.12.30 19:48:12
+DELETE FROM `dataObjectMap` WHERE `id` = 20;
+
+-- 2011.12.30 19:48:13
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 21;
+
+-- 2011.12.30 19:48:13
+DELETE FROM `dataObjectMap` WHERE `id` = 21;
+
+-- 2011.12.30 19:48:13
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 25;
+
+-- 2011.12.30 19:48:13
+DELETE FROM `dataObjectMap` WHERE `id` = 25;
+
+-- 2011.12.30 19:48:13
+DROP TABLE `new4555`;
+
+-- 2011.12.30 19:48:14
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 26;
+
+-- 2011.12.30 19:48:14
+DELETE FROM `dataObjectMap` WHERE `id` = 26;
+
+-- 2011.12.30 19:48:14
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 27;
+
+-- 2011.12.30 19:48:14
+DELETE FROM `dataObjectMap` WHERE `id` = 27;
+
+-- 2011.12.30 19:48:15
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 28;
+
+-- 2011.12.30 19:48:15
+DELETE FROM `dataObjectMap` WHERE `id` = 28;
+
+-- 2011.12.30 19:48:15
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 32;
+
+-- 2011.12.30 19:48:15
+DELETE FROM `dataObjectMap` WHERE `id` = 32;
+
+-- 2011.12.30 19:48:16
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 36;
+
+-- 2011.12.30 19:48:16
+DELETE FROM `dataObjectMap` WHERE `id` = 36;
+
+-- 2011.12.30 19:48:16
+DROP TABLE `new4`;
+
+-- 2011.12.30 19:48:38
+CREATE TABLE IF NOT EXISTS `a1` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:48:38
+INSERT INTO `dataObjectMap` SET `name` = 'a1',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a1',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:48:40
+CREATE TABLE IF NOT EXISTS `a2` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:48:40
+INSERT INTO `dataObjectMap` SET `name` = 'a2',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a2',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:48:42
+CREATE TABLE IF NOT EXISTS `a3` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:48:42
+INSERT INTO `dataObjectMap` SET `name` = 'a3',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a3',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:48:43
+CREATE TABLE IF NOT EXISTS `a4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:48:43
+INSERT INTO `dataObjectMap` SET `name` = 'a4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:48:45
+CREATE TABLE IF NOT EXISTS `a5` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:48:45
+INSERT INTO `dataObjectMap` SET `name` = 'a5',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a5',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:49:01
+RENAME TABLE `a1` TO `b1`;
+
+-- 2011.12.30 19:49:01
+RENAME TABLE `a2` TO `b2`;
+
+-- 2011.12.30 19:49:01
+RENAME TABLE `a3` TO `b3`;
+
+-- 2011.12.30 19:49:01
+RENAME TABLE `a4` TO `b4`;
+
+-- 2011.12.30 19:49:01
+RENAME TABLE `a5` TO `b5`;
+
+-- 2011.12.30 19:49:13
+CREATE TABLE IF NOT EXISTS `newObject3` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:49:13
+INSERT INTO `dataObjectMap` SET `name` = 'newObject3',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'newObject3',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:49:13
+CREATE TABLE IF NOT EXISTS `new4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:49:13
+INSERT INTO `dataObjectMap` SET `name` = 'new4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'new4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:49:13
+CREATE TABLE IF NOT EXISTS `abc2` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:49:13
+INSERT INTO `dataObjectMap` SET `name` = 'abc2',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'abc2',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:49:13
+CREATE TABLE IF NOT EXISTS `newObject` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:49:13
+INSERT INTO `dataObjectMap` SET `name` = 'newObject',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'newObject',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:49:14
+CREATE TABLE IF NOT EXISTS `newObject2` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:49:14
+INSERT INTO `dataObjectMap` SET `name` = 'newObject2',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'newObject2',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:49:14
+RENAME TABLE `new4` TO `new4555`;
+
+-- 2011.12.30 19:49:14
+RENAME TABLE `new4555` TO `new455511`;
+
+-- 2011.12.30 19:49:14
+CREATE TABLE IF NOT EXISTS `hhh` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:49:14
+INSERT INTO `dataObjectMap` SET `name` = 'hhh',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'hhh',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 59;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `dataObjectMap` WHERE `id` = 59;
+
+-- 2011.12.30 19:49:14
+DROP TABLE `hhh`;
+
+-- 2011.12.30 19:49:14
+CREATE TABLE IF NOT EXISTS `sdfsdf` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:49:14
+INSERT INTO `dataObjectMap` SET `name` = 'sdfsdf',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfsdf',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 60;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `dataObjectMap` WHERE `id` = 60;
+
+-- 2011.12.30 19:49:14
+DROP TABLE `sdfsdf`;
+
+-- 2011.12.30 19:49:14
+CREATE TABLE IF NOT EXISTS `sdfs` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:49:14
+INSERT INTO `dataObjectMap` SET `name` = 'sdfs',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sdfs',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:49:14
+RENAME TABLE `sdfs` TO `sdfsf2222`;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 61;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `dataObjectMap` WHERE `id` = 61;
+
+-- 2011.12.30 19:49:14
+DROP TABLE `sdfsf2222`;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 57;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `dataObjectMap` WHERE `id` = 57;
+
+-- 2011.12.30 19:49:14
+DROP TABLE `newObject`;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 58;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `dataObjectMap` WHERE `id` = 58;
+
+-- 2011.12.30 19:49:14
+DROP TABLE `newObject2`;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 54;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `dataObjectMap` WHERE `id` = 54;
+
+-- 2011.12.30 19:49:14
+DROP TABLE `newObject3`;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 55;
+
+-- 2011.12.30 19:49:14
+DELETE FROM `dataObjectMap` WHERE `id` = 55;
+
+-- 2011.12.30 19:49:14
+DROP TABLE `new455511`;
+
+-- 2011.12.30 19:49:37
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 49;
+
+-- 2011.12.30 19:49:37
+DELETE FROM `dataObjectMap` WHERE `id` = 49;
+
+-- 2011.12.30 19:49:37
+DROP TABLE `b1`;
+
+-- 2011.12.30 19:49:38
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 51;
+
+-- 2011.12.30 19:49:38
+DELETE FROM `dataObjectMap` WHERE `id` = 51;
+
+-- 2011.12.30 19:49:38
+DROP TABLE `b3`;
+
+-- 2011.12.30 19:49:38
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 53;
+
+-- 2011.12.30 19:49:38
+DELETE FROM `dataObjectMap` WHERE `id` = 53;
+
+-- 2011.12.30 19:49:38
+DROP TABLE `b5`;
+
+-- 2011.12.30 19:49:39
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 56;
+
+-- 2011.12.30 19:49:39
+DELETE FROM `dataObjectMap` WHERE `id` = 56;
+
+-- 2011.12.30 19:49:39
+DROP TABLE `abc2`;
+
+-- 2011.12.30 19:49:40
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 52;
+
+-- 2011.12.30 19:49:40
+DELETE FROM `dataObjectMap` WHERE `id` = 52;
+
+-- 2011.12.30 19:49:40
+DROP TABLE `b4`;
+
+-- 2011.12.30 19:49:40
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 50;
+
+-- 2011.12.30 19:49:40
+DELETE FROM `dataObjectMap` WHERE `id` = 50;
+
+-- 2011.12.30 19:49:40
+DROP TABLE `b2`;
+
+-- 2011.12.30 19:52:38
+CREATE TABLE IF NOT EXISTS `a1` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:52:38
+INSERT INTO `dataObjectMap` SET `name` = 'a1',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a1',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:52:41
+CREATE TABLE IF NOT EXISTS `a2` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:52:41
+INSERT INTO `dataObjectMap` SET `name` = 'a2',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a2',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:52:43
+CREATE TABLE IF NOT EXISTS `a3` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:52:43
+INSERT INTO `dataObjectMap` SET `name` = 'a3',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a3',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:52:46
+CREATE TABLE IF NOT EXISTS `a4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:52:46
+INSERT INTO `dataObjectMap` SET `name` = 'a4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:52:48
+CREATE TABLE IF NOT EXISTS `a5` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:52:48
+INSERT INTO `dataObjectMap` SET `name` = 'a5',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a5',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:52:58
+RENAME TABLE `a1` TO `b1`;
+
+-- 2011.12.30 19:52:58
+RENAME TABLE `a2` TO `b2`;
+
+-- 2011.12.30 19:52:58
+RENAME TABLE `a3` TO `b3`;
+
+-- 2011.12.30 19:52:58
+RENAME TABLE `a4` TO `b4`;
+
+-- 2011.12.30 19:52:58
+RENAME TABLE `a5` TO `b5`;
+
+-- 2011.12.30 19:53:13
+CREATE TABLE IF NOT EXISTS `a1` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:53:13
+INSERT INTO `dataObjectMap` SET `name` = 'a1',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a1',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:53:13
+CREATE TABLE IF NOT EXISTS `a2` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:53:13
+INSERT INTO `dataObjectMap` SET `name` = 'a2',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a2',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:53:14
+CREATE TABLE IF NOT EXISTS `a3` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:53:14
+INSERT INTO `dataObjectMap` SET `name` = 'a3',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a3',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:53:14
+CREATE TABLE IF NOT EXISTS `a4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:53:14
+INSERT INTO `dataObjectMap` SET `name` = 'a4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:53:14
+CREATE TABLE IF NOT EXISTS `a5` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:53:14
+INSERT INTO `dataObjectMap` SET `name` = 'a5',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a5',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:53:24
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 67;
+
+-- 2011.12.30 19:53:24
+DELETE FROM `dataObjectMap` WHERE `id` = 67;
+
+-- 2011.12.30 19:53:24
+DROP TABLE `a1`;
+
+-- 2011.12.30 19:53:25
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 68;
+
+-- 2011.12.30 19:53:25
+DELETE FROM `dataObjectMap` WHERE `id` = 68;
+
+-- 2011.12.30 19:53:25
+DROP TABLE `a2`;
+
+-- 2011.12.30 19:53:25
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 69;
+
+-- 2011.12.30 19:53:25
+DELETE FROM `dataObjectMap` WHERE `id` = 69;
+
+-- 2011.12.30 19:53:25
+DROP TABLE `a3`;
+
+-- 2011.12.30 19:53:26
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 70;
+
+-- 2011.12.30 19:53:26
+DELETE FROM `dataObjectMap` WHERE `id` = 70;
+
+-- 2011.12.30 19:53:26
+DROP TABLE `a4`;
+
+-- 2011.12.30 19:53:26
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 71;
+
+-- 2011.12.30 19:53:26
+DELETE FROM `dataObjectMap` WHERE `id` = 71;
+
+-- 2011.12.30 19:53:26
+DROP TABLE `a5`;
+
+-- 2011.12.30 19:55:00
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 66;
+
+-- 2011.12.30 19:55:00
+DELETE FROM `dataObjectMap` WHERE `id` = 66;
+
+-- 2011.12.30 19:55:02
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 65;
+
+-- 2011.12.30 19:55:02
+DELETE FROM `dataObjectMap` WHERE `id` = 65;
+
+-- 2011.12.30 19:55:03
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 64;
+
+-- 2011.12.30 19:55:03
+DELETE FROM `dataObjectMap` WHERE `id` = 64;
+
+-- 2011.12.30 19:55:05
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 63;
+
+-- 2011.12.30 19:55:05
+DELETE FROM `dataObjectMap` WHERE `id` = 63;
+
+-- 2011.12.30 19:55:07
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 62;
+
+-- 2011.12.30 19:55:07
+DELETE FROM `dataObjectMap` WHERE `id` = 62;
+
+-- 2011.12.30 19:55:10
+CREATE TABLE IF NOT EXISTS `a1` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:55:10
+INSERT INTO `dataObjectMap` SET `name` = 'a1',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a1',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:55:10
+CREATE TABLE IF NOT EXISTS `a2` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:55:10
+INSERT INTO `dataObjectMap` SET `name` = 'a2',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a2',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:55:10
+CREATE TABLE IF NOT EXISTS `a3` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:55:10
+INSERT INTO `dataObjectMap` SET `name` = 'a3',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a3',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:55:10
+CREATE TABLE IF NOT EXISTS `a4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:55:10
+INSERT INTO `dataObjectMap` SET `name` = 'a4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:55:10
+CREATE TABLE IF NOT EXISTS `a5` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:55:10
+INSERT INTO `dataObjectMap` SET `name` = 'a5',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a5',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:55:10
+RENAME TABLE `a1` TO `b1`;
+
+-- 2011.12.30 19:55:10
+RENAME TABLE `a2` TO `b2`;
+
+-- 2011.12.30 19:55:10
+RENAME TABLE `a3` TO `b3`;
+
+-- 2011.12.30 19:55:10
+RENAME TABLE `a4` TO `b4`;
+
+-- 2011.12.30 19:55:10
+RENAME TABLE `a5` TO `b5`;
+
+-- 2011.12.30 19:55:10
+RENAME TABLE `b1` TO `c1`;
+
+-- 2011.12.30 19:55:10
+RENAME TABLE `b2` TO `c2`;
+
+-- 2011.12.30 19:55:10
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 76;
+
+-- 2011.12.30 19:55:10
+DELETE FROM `dataObjectMap` WHERE `id` = 76;
+
+-- 2011.12.30 19:55:10
+DROP TABLE `b5`;
+
+-- 2011.12.30 19:55:10
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 75;
+
+-- 2011.12.30 19:55:10
+DELETE FROM `dataObjectMap` WHERE `id` = 75;
+
+-- 2011.12.30 19:55:10
+DROP TABLE `b4`;
+
+-- 2011.12.30 19:55:10
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 74;
+
+-- 2011.12.30 19:55:10
+DELETE FROM `dataObjectMap` WHERE `id` = 74;
+
+-- 2011.12.30 19:55:10
+DROP TABLE `b3`;
+
+-- 2011.12.30 19:55:10
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 73;
+
+-- 2011.12.30 19:55:10
+DELETE FROM `dataObjectMap` WHERE `id` = 73;
+
+-- 2011.12.30 19:55:10
+DROP TABLE `c2`;
+
+-- 2011.12.30 19:55:10
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 72;
+
+-- 2011.12.30 19:55:10
+DELETE FROM `dataObjectMap` WHERE `id` = 72;
+
+-- 2011.12.30 19:55:10
+DROP TABLE `c1`;
+
+-- 2011.12.30 19:55:13
+CREATE TABLE IF NOT EXISTS `a1` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:55:13
+INSERT INTO `dataObjectMap` SET `name` = 'a1',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a1',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:55:13
+CREATE TABLE IF NOT EXISTS `a2` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:55:13
+INSERT INTO `dataObjectMap` SET `name` = 'a2',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a2',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:55:13
+CREATE TABLE IF NOT EXISTS `a3` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:55:13
+INSERT INTO `dataObjectMap` SET `name` = 'a3',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a3',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:55:13
+CREATE TABLE IF NOT EXISTS `a4` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:55:13
+INSERT INTO `dataObjectMap` SET `name` = 'a4',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a4',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:55:13
+CREATE TABLE IF NOT EXISTS `a5` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2011.12.30 19:55:13
+INSERT INTO `dataObjectMap` SET `name` = 'a5',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'a5',`type` = 0,`id` = 0;
+
+-- 2011.12.30 19:55:13
+RENAME TABLE `a1` TO `b1`;
+
+-- 2011.12.30 19:55:13
+RENAME TABLE `a2` TO `b2`;
+
+-- 2011.12.30 19:55:13
+RENAME TABLE `a3` TO `b3`;
+
+-- 2011.12.30 19:55:13
+RENAME TABLE `a4` TO `b4`;
+
+-- 2011.12.30 19:55:13
+RENAME TABLE `a5` TO `b5`;
+
+-- 2011.12.30 19:55:13
+RENAME TABLE `b1` TO `c1`;
+
+-- 2011.12.30 19:55:13
+RENAME TABLE `b2` TO `c2`;
+
+-- 2011.12.30 19:55:13
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 81;
+
+-- 2011.12.30 19:55:13
+DELETE FROM `dataObjectMap` WHERE `id` = 81;
+
+-- 2011.12.30 19:55:13
+DROP TABLE `b5`;
+
+-- 2011.12.30 19:55:13
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 80;
+
+-- 2011.12.30 19:55:13
+DELETE FROM `dataObjectMap` WHERE `id` = 80;
+
+-- 2011.12.30 19:55:13
+DROP TABLE `b4`;
+
+-- 2011.12.30 19:55:13
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 79;
+
+-- 2011.12.30 19:55:13
+DELETE FROM `dataObjectMap` WHERE `id` = 79;
+
+-- 2011.12.30 19:55:13
+DROP TABLE `b3`;
+
+-- 2011.12.30 19:55:13
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 78;
+
+-- 2011.12.30 19:55:13
+DELETE FROM `dataObjectMap` WHERE `id` = 78;
+
+-- 2011.12.30 19:55:13
+DROP TABLE `c2`;
+
+-- 2011.12.30 19:55:13
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 77;
+
+-- 2011.12.30 19:55:13
+DELETE FROM `dataObjectMap` WHERE `id` = 77;
+
+-- 2011.12.30 19:55:13
+DROP TABLE `c1`;
+
+-- 2012.01.27 17:06:39
+INSERT INTO `referenceField` SET `propertyName` = 'user',`fieldName` = 'user',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"user\";s:8:\"genitive\";s:4:\"user\";s:6:\"dative\";s:4:\"user\";s:8:\"accusive\";s:4:\"user\";s:8:\"creative\";s:4:\"user\";s:13:\"prepositional\";s:4:\"user\";}',`defaultValue` = '0',`id` = 1 ON DUPLICATE KEY UPDATE `propertyName` = 'user',`fieldName` = 'user',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"user\";s:8:\"genitive\";s:4:\"user\";s:6:\"dative\";s:4:\"user\";s:8:\"accusive\";s:4:\"user\";s:8:\"creative\";s:4:\"user\";s:13:\"prepositional\";s:4:\"user\";}',`defaultValue` = '0',`id` = 1;
+
+-- 2012.01.27 17:06:39
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 1;
+
+-- 2012.01.27 17:06:39
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (4, 1);
+
+-- 2012.01.27 17:06:39
+INSERT INTO `referenceField` SET `propertyName` = 'image',`fieldName` = 'image',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:5:\"image\";s:8:\"genitive\";s:5:\"image\";s:6:\"dative\";s:5:\"image\";s:8:\"accusive\";s:5:\"image\";s:8:\"creative\";s:5:\"image\";s:13:\"prepositional\";s:5:\"image\";}',`defaultValue` = '0',`id` = 2 ON DUPLICATE KEY UPDATE `propertyName` = 'image',`fieldName` = 'image',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:5:\"image\";s:8:\"genitive\";s:5:\"image\";s:6:\"dative\";s:5:\"image\";s:8:\"accusive\";s:5:\"image\";s:8:\"creative\";s:5:\"image\";s:13:\"prepositional\";s:5:\"image\";}',`defaultValue` = '0',`id` = 2;
+
+-- 2012.01.27 17:06:39
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 2;
+
+-- 2012.01.27 17:06:39
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (5, 2);
+
+-- 2012.01.27 17:06:39
+INSERT INTO `referenceField` SET `propertyName` = 'ab',`fieldName` = 'ab',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:2:\"ab\";s:8:\"genitive\";s:2:\"ab\";s:6:\"dative\";s:2:\"ab\";s:8:\"accusive\";s:2:\"ab\";s:8:\"creative\";s:2:\"ab\";s:13:\"prepositional\";s:2:\"ab\";}',`defaultValue` = '0',`id` = 3 ON DUPLICATE KEY UPDATE `propertyName` = 'ab',`fieldName` = 'ab',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:2:\"ab\";s:8:\"genitive\";s:2:\"ab\";s:6:\"dative\";s:2:\"ab\";s:8:\"accusive\";s:2:\"ab\";s:8:\"creative\";s:2:\"ab\";s:13:\"prepositional\";s:2:\"ab\";}',`defaultValue` = '0',`id` = 3;
+
+-- 2012.01.27 17:48:38
+CREATE TABLE IF NOT EXISTS `author` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2012.01.27 17:48:38
+INSERT INTO `dataObjectMap` SET `name` = 'author',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'author',`type` = 0,`id` = 0;
+
+-- 2012.01.27 17:48:46
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 0;
+
+-- 2012.01.27 17:48:46
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 17:48:46
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 7;
+
+-- 2012.01.27 17:48:46
+INSERT IGNORE INTO
+                  `link_dataObjectMap_dataObjectField`
+                  (`dataObjectMapId`, `dataObjectFieldId`)
+                VALUES
+                  (7, 651);
+
+-- 2012.01.27 17:48:46
+ALTER TABLE
+                  `author`ADD COLUMN `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 17:49:01
+CREATE TABLE IF NOT EXISTS `book` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2012.01.27 17:49:01
+INSERT INTO `dataObjectMap` SET `name` = 'book',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'book',`type` = 0,`id` = 0;
+
+-- 2012.01.27 17:49:10
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '',`type` = 0,`id` = 0;
+
+-- 2012.01.27 17:49:10
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '',`type` = 0,`id` = 652 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '',`type` = 0,`id` = 652;
+
+-- 2012.01.27 17:49:10
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 8;
+
+-- 2012.01.27 17:49:10
+INSERT IGNORE INTO
+                  `link_dataObjectMap_dataObjectField`
+                  (`dataObjectMapId`, `dataObjectFieldId`)
+                VALUES
+                  (8, 652);
+
+-- 2012.01.27 17:49:10
+ALTER TABLE
+                  `book`ADD COLUMN `name`  VARCHAR(255) NOT NULL DEFAULT '';
+
+-- 2012.01.27 17:55:11
+CREATE TABLE `link_author_book` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2012.01.27 17:55:11
+INSERT INTO `referenceMap` SET `name` = 'link_author_book',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'link_author_book',`type` = 0,`id` = 0;
+
+-- 2012.01.27 17:55:24
+INSERT INTO `referenceField` SET `propertyName` = 'author',`fieldName` = 'author',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'author',`fieldName` = 'author',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 0;
+
+-- 2012.01.27 17:55:24
+INSERT INTO `referenceField` SET `propertyName` = 'author',`fieldName` = 'author',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 4 ON DUPLICATE KEY UPDATE `propertyName` = 'author',`fieldName` = 'author',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 4;
+
+-- 2012.01.27 17:55:24
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 4;
+
+-- 2012.01.27 17:55:24
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (7, 4);
+
+-- 2012.01.27 17:55:24
+INSERT INTO `referenceField` SET `propertyName` = 'book',`fieldName` = 'book',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"book\";s:8:\"genitive\";s:4:\"book\";s:6:\"dative\";s:4:\"book\";s:8:\"accusive\";s:4:\"book\";s:8:\"creative\";s:4:\"book\";s:13:\"prepositional\";s:4:\"book\";}',`defaultValue` = '0',`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'book',`fieldName` = 'book',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"book\";s:8:\"genitive\";s:4:\"book\";s:6:\"dative\";s:4:\"book\";s:8:\"accusive\";s:4:\"book\";s:8:\"creative\";s:4:\"book\";s:13:\"prepositional\";s:4:\"book\";}',`defaultValue` = '0',`id` = 0;
+
+-- 2012.01.27 17:55:24
+INSERT INTO `referenceField` SET `propertyName` = 'book',`fieldName` = 'book',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"book\";s:8:\"genitive\";s:4:\"book\";s:6:\"dative\";s:4:\"book\";s:8:\"accusive\";s:4:\"book\";s:8:\"creative\";s:4:\"book\";s:13:\"prepositional\";s:4:\"book\";}',`defaultValue` = '0',`id` = 5 ON DUPLICATE KEY UPDATE `propertyName` = 'book',`fieldName` = 'book',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"book\";s:8:\"genitive\";s:4:\"book\";s:6:\"dative\";s:4:\"book\";s:8:\"accusive\";s:4:\"book\";s:8:\"creative\";s:4:\"book\";s:13:\"prepositional\";s:4:\"book\";}',`defaultValue` = '0',`id` = 5;
+
+-- 2012.01.27 17:55:24
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 5;
+
+-- 2012.01.27 17:55:24
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (8, 5);
+
+-- 2012.01.27 17:55:24
+DELETE FROM `link_referenceMap_referenceField` WHERE `referenceMapId` = 2;
+
+-- 2012.01.27 17:55:24
+INSERT IGNORE INTO
+                  `link_referenceMap_referenceField`
+                  (`referenceMapId`, `referenceFieldId`, `referenceFieldType`)
+                VALUES
+                  (2, 4, 1), (2, 5, 2);
+
+-- 2012.01.27 17:55:24
+ALTER TABLE
+                  `link_author_book`ADD COLUMN `authorId`  INT(10) UNSIGNED, ADD COLUMN `bookId`  INT(10) UNSIGNED;
+
+-- 2012.01.27 17:55:24
+ALTER TABLE
+                  `link_author_book`ADD INDEX `authorId` (`authorId`), ADD INDEX `bookId` (`bookId`);
+
+-- 2012.01.27 17:55:24
+DELETE FROM `link_referenceMap_referenceField` WHERE `referenceMapId` = 2;
+
+-- 2012.01.27 17:55:24
+INSERT IGNORE INTO
+                  `link_referenceMap_referenceField`
+                  (`referenceMapId`, `referenceFieldId`, `referenceFieldType`)
+                VALUES
+                  (2, 4, 1), (2, 5, 2);
+
+-- 2012.01.27 18:20:52
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:20:52
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:21:25
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:21:25
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:24:10
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:24:10
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:24:38
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:24:38
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:24:59
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:24:59
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:25:01
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:25:01
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:25:17
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:25:17
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:32:43
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:32:43
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:35:01
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:35:01
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:44:16
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:44:16
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:45:02
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:45:02
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:46:13
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:46:13
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:49:56
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:49:56
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:50:35
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:50:35
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:51:56
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:51:56
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:52:38
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:52:38
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:55:34
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:55:34
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 18:57:17
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 18:57:17
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 19:54:58
+CREATE TABLE IF NOT EXISTS `sketch` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2012.01.27 19:54:58
+INSERT INTO `dataObjectMap` SET `name` = 'sketch',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'sketch',`type` = 0,`id` = 0;
+
+-- 2012.01.27 19:55:37
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = 'name',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = 'name',`type` = 0,`id` = 0;
+
+-- 2012.01.27 19:55:37
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = 'name',`type` = 0,`id` = 653 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = 'name',`type` = 0,`id` = 653;
+
+-- 2012.01.27 19:55:37
+DELETE FROM `link_dataObjectMap_dataObjectField` WHERE `dataObjectMapId` = 9;
+
+-- 2012.01.27 19:55:37
+INSERT IGNORE INTO
+                  `link_dataObjectMap_dataObjectField`
+                  (`dataObjectMapId`, `dataObjectFieldId`)
+                VALUES
+                  (9, 653);
+
+-- 2012.01.27 19:55:37
+ALTER TABLE
+                  `sketch`ADD COLUMN `name`  VARCHAR(255) NOT NULL DEFAULT 'name';
+
+-- 2012.01.27 19:55:53
+CREATE TABLE `link_author_sketch` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2012.01.27 19:55:53
+INSERT INTO `referenceMap` SET `name` = 'link_author_sketch',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'link_author_sketch',`type` = 0,`id` = 0;
+
+-- 2012.01.27 19:56:23
+CREATE TABLE `link_author_sketch` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2012.01.27 19:56:23
+INSERT INTO `referenceMap` SET `name` = 'link_author_sketch',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'link_author_sketch',`type` = 0,`id` = 0;
+
+-- 2012.01.27 19:56:28
+DELETE FROM `referenceMap` WHERE `id` = 4;
+
+-- 2012.01.27 19:56:28
+DROP TABLE `link_author_sketch`;
+
+-- 2012.01.27 19:57:09
+INSERT INTO `referenceField` SET `propertyName` = 'author',`fieldName` = 'author',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'author',`fieldName` = 'author',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 0;
+
+-- 2012.01.27 19:57:09
+INSERT INTO `referenceField` SET `propertyName` = 'author',`fieldName` = 'author',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 6 ON DUPLICATE KEY UPDATE `propertyName` = 'author',`fieldName` = 'author',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 6;
+
+-- 2012.01.27 19:57:09
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 6;
+
+-- 2012.01.27 19:57:09
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (7, 6);
+
+-- 2012.01.27 19:57:09
+INSERT INTO `referenceField` SET `propertyName` = 'sketch',`fieldName` = 'sketch',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"sketch\";s:8:\"genitive\";s:6:\"sketch\";s:6:\"dative\";s:6:\"sketch\";s:8:\"accusive\";s:6:\"sketch\";s:8:\"creative\";s:6:\"sketch\";s:13:\"prepositional\";s:6:\"sketch\";}',`defaultValue` = '0',`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'sketch',`fieldName` = 'sketch',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"sketch\";s:8:\"genitive\";s:6:\"sketch\";s:6:\"dative\";s:6:\"sketch\";s:8:\"accusive\";s:6:\"sketch\";s:8:\"creative\";s:6:\"sketch\";s:13:\"prepositional\";s:6:\"sketch\";}',`defaultValue` = '0',`id` = 0;
+
+-- 2012.01.27 19:57:09
+INSERT INTO `referenceField` SET `propertyName` = 'sketch',`fieldName` = 'sketch',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"sketch\";s:8:\"genitive\";s:6:\"sketch\";s:6:\"dative\";s:6:\"sketch\";s:8:\"accusive\";s:6:\"sketch\";s:8:\"creative\";s:6:\"sketch\";s:13:\"prepositional\";s:6:\"sketch\";}',`defaultValue` = '0',`id` = 7 ON DUPLICATE KEY UPDATE `propertyName` = 'sketch',`fieldName` = 'sketch',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"sketch\";s:8:\"genitive\";s:6:\"sketch\";s:6:\"dative\";s:6:\"sketch\";s:8:\"accusive\";s:6:\"sketch\";s:8:\"creative\";s:6:\"sketch\";s:13:\"prepositional\";s:6:\"sketch\";}',`defaultValue` = '0',`id` = 7;
+
+-- 2012.01.27 19:57:09
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 7;
+
+-- 2012.01.27 19:57:09
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (9, 7);
+
+-- 2012.01.27 19:57:09
+INSERT INTO `referenceField` SET `propertyName` = 'rating',`fieldName` = 'rating',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"rating\";s:8:\"genitive\";s:6:\"rating\";s:6:\"dative\";s:6:\"rating\";s:8:\"accusive\";s:6:\"rating\";s:8:\"creative\";s:6:\"rating\";s:13:\"prepositional\";s:6:\"rating\";}',`defaultValue` = '0',`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'rating',`fieldName` = 'rating',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"rating\";s:8:\"genitive\";s:6:\"rating\";s:6:\"dative\";s:6:\"rating\";s:8:\"accusive\";s:6:\"rating\";s:8:\"creative\";s:6:\"rating\";s:13:\"prepositional\";s:6:\"rating\";}',`defaultValue` = '0',`id` = 0;
+
+-- 2012.01.27 19:57:09
+INSERT INTO `referenceField` SET `propertyName` = 'rating',`fieldName` = 'rating',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"rating\";s:8:\"genitive\";s:6:\"rating\";s:6:\"dative\";s:6:\"rating\";s:8:\"accusive\";s:6:\"rating\";s:8:\"creative\";s:6:\"rating\";s:13:\"prepositional\";s:6:\"rating\";}',`defaultValue` = '0',`id` = 8 ON DUPLICATE KEY UPDATE `propertyName` = 'rating',`fieldName` = 'rating',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"rating\";s:8:\"genitive\";s:6:\"rating\";s:6:\"dative\";s:6:\"rating\";s:8:\"accusive\";s:6:\"rating\";s:8:\"creative\";s:6:\"rating\";s:13:\"prepositional\";s:6:\"rating\";}',`defaultValue` = '0',`id` = 8;
+
+-- 2012.01.27 19:57:09
+DELETE FROM `link_referenceMap_referenceField` WHERE `referenceMapId` = 3;
+
+-- 2012.01.27 19:57:09
+INSERT IGNORE INTO
+                  `link_referenceMap_referenceField`
+                  (`referenceMapId`, `referenceFieldId`, `referenceFieldType`)
+                VALUES
+                  (3, 6, 1), (3, 7, 2), (3, 8, 4);
+
+-- 2012.01.27 19:57:09
+ALTER TABLE
+                  `link_author_sketch`ADD COLUMN `authorId`  INT(10) UNSIGNED, ADD COLUMN `sketchId`  INT(10) UNSIGNED, ADD COLUMN `rating`  INT(10) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 19:57:09
+ALTER TABLE
+                  `link_author_sketch`ADD INDEX `authorId` (`authorId`), ADD INDEX `sketchId` (`sketchId`);
+
+-- 2012.01.27 19:57:09
+DELETE FROM `link_referenceMap_referenceField` WHERE `referenceMapId` = 3;
+
+-- 2012.01.27 19:57:09
+INSERT IGNORE INTO
+                  `link_referenceMap_referenceField`
+                  (`referenceMapId`, `referenceFieldId`, `referenceFieldType`)
+                VALUES
+                  (3, 6, 1), (3, 7, 2), (3, 8, 4);
+
+-- 2012.01.27 19:57:22
+DELETE FROM `link_referenceMap_referenceField` WHERE `referenceMapId` = 3;
+
+-- 2012.01.27 19:57:22
+INSERT IGNORE INTO
+                  `link_referenceMap_referenceField`
+                  (`referenceMapId`, `referenceFieldId`, `referenceFieldType`)
+                VALUES
+                  (3, 6, 1), (3, 7, 2), (3, 8, 4);
+
+-- 2012.01.27 19:57:22
+DELETE FROM `link_referenceMap_referenceField` WHERE `referenceMapId` = 3;
+
+-- 2012.01.27 19:57:22
+INSERT IGNORE INTO
+                  `link_referenceMap_referenceField`
+                  (`referenceMapId`, `referenceFieldId`, `referenceFieldType`)
+                VALUES
+                  (3, 6, 1), (3, 7, 2), (3, 8, 4);
+
+-- 2012.01.27 19:57:22
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 6;
+
+-- 2012.01.27 19:57:22
+DELETE FROM `referenceField` WHERE `id` = 6;
+
+-- 2012.01.27 19:57:22
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 7;
+
+-- 2012.01.27 19:57:22
+DELETE FROM `referenceField` WHERE `id` = 7;
+
+-- 2012.01.27 19:57:22
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 8;
+
+-- 2012.01.27 19:57:22
+DELETE FROM `referenceField` WHERE `id` = 8;
+
+-- 2012.01.27 19:57:22
+DELETE FROM `referenceMap` WHERE `id` = 3;
+
+-- 2012.01.27 19:57:22
+DROP TABLE `link_author_sketch`;
+
+-- 2012.01.27 19:57:26
+CREATE TABLE `link_author_sketch` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2012.01.27 19:57:26
+INSERT INTO `referenceMap` SET `name` = 'link_author_sketch',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'link_author_sketch',`type` = 0,`id` = 0;
+
+-- 2012.01.27 19:57:46
+INSERT INTO `referenceField` SET `propertyName` = 'author',`fieldName` = 'author',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'author',`fieldName` = 'author',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 0;
+
+-- 2012.01.27 19:57:46
+INSERT INTO `referenceField` SET `propertyName` = 'author',`fieldName` = 'author',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 9 ON DUPLICATE KEY UPDATE `propertyName` = 'author',`fieldName` = 'author',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"author\";s:8:\"genitive\";s:6:\"author\";s:6:\"dative\";s:6:\"author\";s:8:\"accusive\";s:6:\"author\";s:8:\"creative\";s:6:\"author\";s:13:\"prepositional\";s:6:\"author\";}',`defaultValue` = '0',`id` = 9;
+
+-- 2012.01.27 19:57:46
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 9;
+
+-- 2012.01.27 19:57:46
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (7, 9);
+
+-- 2012.01.27 19:57:46
+INSERT INTO `referenceField` SET `propertyName` = 'sketch',`fieldName` = 'sketch',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"sketch\";s:8:\"genitive\";s:6:\"sketch\";s:6:\"dative\";s:6:\"sketch\";s:8:\"accusive\";s:6:\"sketch\";s:8:\"creative\";s:6:\"sketch\";s:13:\"prepositional\";s:6:\"sketch\";}',`defaultValue` = '0',`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'sketch',`fieldName` = 'sketch',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"sketch\";s:8:\"genitive\";s:6:\"sketch\";s:6:\"dative\";s:6:\"sketch\";s:8:\"accusive\";s:6:\"sketch\";s:8:\"creative\";s:6:\"sketch\";s:13:\"prepositional\";s:6:\"sketch\";}',`defaultValue` = '0',`id` = 0;
+
+-- 2012.01.27 19:57:46
+INSERT INTO `referenceField` SET `propertyName` = 'sketch',`fieldName` = 'sketch',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"sketch\";s:8:\"genitive\";s:6:\"sketch\";s:6:\"dative\";s:6:\"sketch\";s:8:\"accusive\";s:6:\"sketch\";s:8:\"creative\";s:6:\"sketch\";s:13:\"prepositional\";s:6:\"sketch\";}',`defaultValue` = '0',`id` = 10 ON DUPLICATE KEY UPDATE `propertyName` = 'sketch',`fieldName` = 'sketch',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"sketch\";s:8:\"genitive\";s:6:\"sketch\";s:6:\"dative\";s:6:\"sketch\";s:8:\"accusive\";s:6:\"sketch\";s:8:\"creative\";s:6:\"sketch\";s:13:\"prepositional\";s:6:\"sketch\";}',`defaultValue` = '0',`id` = 10;
+
+-- 2012.01.27 19:57:46
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 10;
+
+-- 2012.01.27 19:57:46
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (9, 10);
+
+-- 2012.01.27 19:57:47
+INSERT INTO `referenceField` SET `propertyName` = 'rating',`fieldName` = 'rating',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"rating\";s:8:\"genitive\";s:6:\"rating\";s:6:\"dative\";s:6:\"rating\";s:8:\"accusive\";s:6:\"rating\";s:8:\"creative\";s:6:\"rating\";s:13:\"prepositional\";s:6:\"rating\";}',`defaultValue` = '0',`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'rating',`fieldName` = 'rating',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"rating\";s:8:\"genitive\";s:6:\"rating\";s:6:\"dative\";s:6:\"rating\";s:8:\"accusive\";s:6:\"rating\";s:8:\"creative\";s:6:\"rating\";s:13:\"prepositional\";s:6:\"rating\";}',`defaultValue` = '0',`id` = 0;
+
+-- 2012.01.27 19:57:47
+INSERT INTO `referenceField` SET `propertyName` = 'rating',`fieldName` = 'rating',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"rating\";s:8:\"genitive\";s:6:\"rating\";s:6:\"dative\";s:6:\"rating\";s:8:\"accusive\";s:6:\"rating\";s:8:\"creative\";s:6:\"rating\";s:13:\"prepositional\";s:6:\"rating\";}',`defaultValue` = '0',`id` = 11 ON DUPLICATE KEY UPDATE `propertyName` = 'rating',`fieldName` = 'rating',`dataType` = 2,`localName` = 'a:6:{s:10:\"nominative\";s:6:\"rating\";s:8:\"genitive\";s:6:\"rating\";s:6:\"dative\";s:6:\"rating\";s:8:\"accusive\";s:6:\"rating\";s:8:\"creative\";s:6:\"rating\";s:13:\"prepositional\";s:6:\"rating\";}',`defaultValue` = '0',`id` = 11;
+
+-- 2012.01.27 19:57:47
+DELETE FROM `link_referenceMap_referenceField` WHERE `referenceMapId` = 5;
+
+-- 2012.01.27 19:57:47
+INSERT IGNORE INTO
+                  `link_referenceMap_referenceField`
+                  (`referenceMapId`, `referenceFieldId`, `referenceFieldType`)
+                VALUES
+                  (5, 9, 1), (5, 10, 2), (5, 11, 4);
+
+-- 2012.01.27 19:57:47
+ALTER TABLE
+                  `link_author_sketch`ADD COLUMN `authorId`  INT(10) UNSIGNED, ADD COLUMN `sketchId`  INT(10) UNSIGNED, ADD COLUMN `rating`  INT(10) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 19:57:47
+ALTER TABLE
+                  `link_author_sketch`ADD INDEX `authorId` (`authorId`), ADD INDEX `sketchId` (`sketchId`);
+
+-- 2012.01.27 19:57:47
+DELETE FROM `link_referenceMap_referenceField` WHERE `referenceMapId` = 5;
+
+-- 2012.01.27 19:57:47
+INSERT IGNORE INTO
+                  `link_referenceMap_referenceField`
+                  (`referenceMapId`, `referenceFieldId`, `referenceFieldType`)
+                VALUES
+                  (5, 9, 1), (5, 10, 2), (5, 11, 4);
+
+-- 2012.01.27 20:10:31
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 20:10:31
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 20:18:10
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 20:18:10
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 20:19:01
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 20:19:01
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+
+-- 2012.01.27 20:25:32
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.01.27 20:25:32
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+

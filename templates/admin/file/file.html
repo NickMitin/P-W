@@ -1,0 +1,50 @@
+      <div id="mainBody">
+        <form method="post" action="/admin/file/rp/save/$this->fileId">
+          <div class="mainTitle">
+            <h1>$fileName</h1>
+            <div id="objectName" style="display: none;">file</div>
+            <div class="mainTitleInfo"></div>
+          </div>
+          <div class="mainText">
+            <div class="editGrid clearTop">
+              <!-- FF::AC::EDITORS::{ --> 
+                    <div class="editGridItem">
+                <div class="editGridLabel">name:</div>
+                <div class="editGridHolder"><input type="text" name="name" value="$fileName" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+                    <div class="editGridItem">
+                <div class="editGridLabel">md5:</div>
+                <div class="editGridHolder"><input type="text" name="md5" value="$fileMd5" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+                    <div class="editGridItem">
+                <div class="editGridLabel">fileName:</div>
+                <div class="editGridHolder"><input type="text" name="fileName" value="$fileFileName" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+                    <div class="editGridItem">
+                <div class="editGridLabel">size:</div>
+                <div class="editGridHolder"><input type="text" name="size" value="$fileSize" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+                    <div class="editGridItem">
+                <div class="editGridLabel">type:</div>
+                <div class="editGridHolder"><input type="text" name="type" value="$fileType" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+      <!-- FF::AC::EDITORS::} -->
+            </div>
+            <div class="greyBox">
+              <div style="margin-left: 22%;"><input type="submit" value="Сохранить" /></div>
+              <div style="clear: left;"></div>
+            </div>
+          </div>
+        </form> 
+      </div>
+      

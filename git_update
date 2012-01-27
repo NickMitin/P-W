@@ -1,0 +1,16 @@
+#!/usr/bin/php
+
+<?php
+  $lines = file('filelist.txt');
+  foreach ($lines as $line)
+  {
+    $line = trim($line);
+    if (file_exists($line))
+    {
+      if (mb_strpos($line, 'lib/') === false)
+      {
+      	`git add $line`;
+      }
+    }
+  }	
+?>

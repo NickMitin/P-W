@@ -1,0 +1,145 @@
+# JOE state file v1.0
+search
+	backwards 0
+	ignore 0
+	replace 0
+	block_restrict 0
+done
+macros
+done
+files
+	"filelist.txt\n"
+	"gitadd.sh\n"
+	"build_install\n"
+	"build_install\n"
+	"build_install\n"
+	"build_install\n"
+	"build_install\n"
+	"build_install\n"
+	"build_paw\n"
+	"build_paw\n"
+done
+find
+done
+replace
+done
+run
+done
+build
+done
+grep
+done
+cmd
+done
+math
+done
+yank
+	"638"
+	"2"
+	"1"
+	"4"
+	"636"
+	"4"
+	"637"
+	"3"
+	"4"
+	"638"
+	"l/"
+	"13"
+	"s"
+	"r"
+	"t"
+	"/css."
+	" "
+	"k "
+	"i"
+	"en"
+	"bin/bash\nwhile read line\ndo\necho $line\ndone"
+	"on"
+	"p"
+	"\n"
+	"?"
+	">?"
+	">"
+	" "
+	"file"
+	"u"
+	" ="
+	"r()"
+	"r"
+	"r"
+	" "
+	"e"
+	"es"
+	"	"
+	"  "
+	"o"
+	"en"
+	"	"
+	"var_dump("
+	")"
+	"t"
+	"''"
+	"9"
+	"="
+	"!"
+	"-"
+	"0"
+	"	"
+	"var_dump($line);"
+	" "
+	"FuckFrameworks"
+	"https://github.com/NickMitin/FuckFrameworks"
+	"."
+	"r"
+	"f/"
+	"-rw-r--r-- 1 ff ff  716 2011-07-18 18:06 "
+	"-rw-r--r-- 1 ff ff  261 2011-07-18 18:06 "
+	"-rw-r--r-- 1 ff ff 2065 2011-07-18 18:06 "
+	"-rw-r--r-- 1 ff ff 3033 2011-07-18 18:06 "
+	"-rw-r--r-- 1 ff ff  936 2011-07-18 18:06 "
+	"\n"
+	"\n"
+	"\n"
+	"\n"
+	"s/"
+	"404"
+	" "
+	"O"
+	"Ess"
+	","
+	"A"
+	"\n"
+	"ha"
+	"kk"
+	"."
+	"h"
+	"b"
+	".p"
+	"/"
+	"`"
+	")"
+	"nsta"
+	"_install"
+	"og"
+	">"
+	">?"
+	")"
+	"n"
+	"~/"
+	"~/"
+	"li"
+	"lid"
+	"ui"
+	"u"
+	"li"
+done
+file_pos
+	206 "sql.sql"
+	96 "filelist.txt~"
+	7 "config"
+	105 "filelist.txt"
+	11 "gitadd.sh"
+	3 "build_install"
+	4 "build_paw"
+done

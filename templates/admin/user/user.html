@@ -1,0 +1,38 @@
+      <div id="mainBody">
+        <form method="post" action="/admin/user/rp/save/$this->userId">
+          <div class="mainTitle">
+            <h1>$userName</h1>
+            <div id="objectName" style="display: none;">user</div>
+            <div class="mainTitleInfo"></div>
+          </div>
+          <div class="mainText">
+            <div class="editGrid clearTop">
+              <!-- FF::AC::EDITORS::{ --> 
+                    <div class="editGridItem">
+                <div class="editGridLabel">email:</div>
+                <div class="editGridHolder"><input type="text" name="email" value="$userEmail" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+                    <div class="editGridItem">
+                <div class="editGridLabel">password:</div>
+                <div class="editGridHolder"><input type="text" name="password" value="$userPassword" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+                    <div class="editGridItem">
+                <div class="editGridLabel">type:</div>
+                <div class="editGridHolder"><input type="text" name="type" value="$userType" size="30" /></div>
+                <div class="editGridEnd"></div>
+              </div>
+              
+      <!-- FF::AC::EDITORS::} -->
+            </div>
+            <div class="greyBox">
+              <div style="margin-left: 22%;"><input type="submit" value="Сохранить" /></div>
+              <div style="clear: left;"></div>
+            </div>
+          </div>
+        </form> 
+      </div>
+      

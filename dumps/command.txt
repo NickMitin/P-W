@@ -1,0 +1,5 @@
+mysqldump -uff -p5HuQemeR ff > /mymedia/projects/ff/dumps/db`date +"%Y-%m-%d-%H:%M:%S"`.sql
+
+mysqldump -uff -p5HuQemeR ff > /mymedia/projects/ff/sql.sql
+
+cat filelist.txt | zip ~/www/paw.zip -@

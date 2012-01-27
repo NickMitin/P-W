@@ -1,0 +1,292 @@
+html, body {
+  font-family: arial, helvetica, sans-serif;
+  font-size: 10pt;
+  text-align: center;
+}
+
+a {
+  color: #0062e8;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+/**
+ * Container
+ */
+
+#container {
+  margin: 10px auto;
+  text-align: left;
+  width: 960px;
+}
+
+/**
+ * Head
+ */
+
+#mainLink {
+  margin: 10px 0;
+  text-align: right;
+}
+
+#mainHead {
+  background: #000000;
+  padding: 10px 20px;
+}
+
+  .mainHeadNavigation {
+    float: left;
+    width: 49%;
+  }
+
+  .mainHeadNavigation li {
+    color: #ffffff;
+    float: left;
+    font-size: 13pt;
+    font-weight: lighter;
+    margin: 4px 40px 0 0;
+  }
+
+  .mainHeadNavigation a {
+    border-bottom: 1px solid;
+    color: #ffffff;
+  }
+
+  .mainHeadSearch {
+    float: right;
+    text-align: right;
+    width: 49%;
+  }
+
+  .mainHeadSearch input {
+    padding: 2px 3px;
+    width: 170px;
+  }
+
+/**
+ * Body
+ */
+
+#mainBody {
+  margin-top: 30px;
+}
+
+  .mainTitle {
+    background: #ffffff url('/images/ff/admin/mainTitleBack.png') repeat-x bottom;
+    padding: 20px;
+  }
+  
+  .mainTitle h1 {
+    float: left;
+    font-size: 24pt;
+    font-weight: bold;
+  }
+  
+  .mainTitle div.button {
+    float: left;
+    margin: 6px 10px;
+  }
+  
+  .mainTitleInfo {
+    color: #7e7e7e;
+    clear: left;
+    padding-top: 10px;
+  }
+  
+    .mainTitleInfo a {
+      font-weight: bold;
+    }
+    
+    .mainTitleInfo li {
+      color: #7e7e7e;
+      float: left;
+      list-style: decimal;
+      margin: 0 20px;
+      width: auto;
+    }
+    
+      .mainTitleInfo li.active {
+        color: #000000;
+      }
+  
+  .mainText {
+    padding: 30px 0 0 20px;
+  }
+  
+  .mainText h2 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 25px;
+  }
+  
+  .mainText h3 {
+    background: #f3f3f3;
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 15px 0 10px;
+    padding: 10px;
+  }
+    
+  .mainText h4 {
+    font-size: 10pt;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .mainText p {
+    line-height: 13pt;
+    margin: 6px 0 14px;
+  }
+  
+  .mainText .mainGreyBox {
+    background: #f6f6f6;
+    margin: 10px 0 20px;
+    padding: 15px 20px;
+  }
+  
+  .mainText .Multiline {
+    padding: 1px 20px;
+  }
+  
+  .mainText .mainGreyBox .mainGreyBoxItem {
+    margin: 15px 0;
+  }
+  
+  .mainText .mainSchedule {
+    border: 1px solid #e3e3e3;
+    margin: 20px 0;
+    padding: 10px;
+    width: 290px;
+  }
+  
+  .mainText .mainStream {
+    border-top: 1px solid #d9d9d9;
+    margin-top: 15px;
+  }
+  
+  .mainText .mainStream .mainStreamItem {
+    border-bottom: 1px solid #d9d9d9;
+    padding: 15px 0;
+  }
+    
+  .mainText .mainStream .mainStreamDate {
+    color: #b0b0b0;
+    margin-top: 8px;
+  }
+  
+  .mainText .mainSchedule {
+    width: 40%;
+  }
+  
+  .mainText .mainSchedule .mainScheduleDays {
+    float: left;
+    font-weight: bold;
+    width: 49%;
+  }
+  
+  .mainText .mainSchedule .mainScheduleHours {
+    float: left;
+    width: 49%;
+  }
+  
+  .mainText .mainMapLegend {
+    line-height: 12pt;
+    margin-top: 10px;
+    margin-left: 320px;
+    position: absolute;
+  }
+  
+  .editGrid {
+    margin: 30px 0 10px;
+    width: 750px;
+  }
+  
+    .editGridItem {
+      clear: left;
+      padding-bottom: 30px;
+    }
+    
+    .editGridLabel {
+      float: left;
+      font-weight: bold;
+      margin-right: 5%;
+      text-align: right;
+      width: 24%;
+    }
+    
+    .editGridHolder {
+      float: left;
+      width: 68%;
+    }
+    
+    .editGridEnd {
+      clear: left;
+    }
+  
+  .mainColumnLeft {
+    float: left;
+    margin-right: 10px;
+    width: 610px;
+  }
+  
+  .mainColumnRight {
+    float: right;
+    width: 310px;
+  }
+
+/**
+ * Custom
+ */
+ 
+.Underline {
+  border-bottom: 1px solid #bfbfbf;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+}
+
+.Item {
+  margin: 6px 0 10px;
+}
+
+.Indent {
+  padding: 0 10px;
+}
+
+.separatorDotted {
+  border-bottom: 1px dotted #d5d5d5;
+  height: 1px;
+  margin: 6px 0;
+}
+
+.clearTop {
+  margin-top: 0 !important;
+}
+
+.menuHorizontal {
+  clear: left;
+}
+
+.menuHorizontal li {
+  float: left;
+  list-style: none;
+  margin: 0 8px 10px 0;
+}
+
+.menuVertical li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.greyBox {
+  background: #eeeeee;
+  clear: left;
+  padding: 20px;
+}
+
+.main2Columns .Column {
+  float: left;
+  width: 49%;
+}

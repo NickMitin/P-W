@@ -1,0 +1,10 @@
+#!/usr/bin/php
+<?php
+
+  unlink('www/paw_install.zip');
+
+  `cat filelist.txt | zip ~/www/paw_install.zip -@`;
+  
+  echo 'P@W install built.';
+
+?>
