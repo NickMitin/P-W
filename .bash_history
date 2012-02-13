@@ -1,22 +1,3 @@
-which sensible-editor
-joe /usr/bin/sensible-editor
-set EDITOR=/usr/bin/joe
-crontab -e
-export EDITOR=joe
-crontab -e
-eixt
-exit
-crontab -e
-export EDITOR=joe
-crontab -e
-exit
-hp /mymedia/projects/ff/www/rss/generator.php
-php /mymedia/projects/ff/www/rss/generator.php
-joe /mymedia/projects/ff/www/rss/generator.php
-joe /mymedia/projects/ff/www/therules/rss/
-joe /mymedia/projects/ff/www/therules/rss/generator.php 
-export EDITOR=joe
-crontab -e
 exit
 php /mymedia/projects/ff/www/therules/rss/generator.php
 date
@@ -497,4 +478,23 @@ php api.php
 cd ..
 git commit -a -m 'dataObjectMap API implemented'
 git branch
+exit
+git branch
+git checkout master
+git branch dataObjectSave
+git commit -a -m 'new dataObject save implemented'
+git add .
+git commit -a -m 'new dataObject save implemented'
+git commit -a -m 'fieldName bug fixed'
+git branch
+git checkout dataObjectSave
+git checkout master
+git branch
+git checkout master
+git commit -a -m 'just a commit'
+git add .
+git commit -a -m 'just a commit'
+git checkout master
+git branch
+git push
 exit
