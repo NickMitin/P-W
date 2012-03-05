@@ -76,6 +76,18 @@
       {
         /*FF::AC::TOP::GETTER::{*/
         
+        /*FF::AC::GETTER_CASE::bbb::{*/
+        case 'bbbIds':
+          if (!array_key_exists('bbbIds', $this->properties))
+          {
+            $this->properties['bbbIds'] = $this->getBbbs(false);
+          }
+          return $this->properties['bbbIds'];
+        break;
+        case 'bbbs':
+          return $this->getBbbs();
+        break;
+        /*FF::AC::GETTER_CASE::bbb::}*/
         /*FF::AC::GETTER_CASE::user::{*/
         case 'userIds':
           if (!array_key_exists('userIds', $this->properties))
@@ -98,6 +110,129 @@
     
     /*FF::AC::TOP::REFERENCE_FUNCTIONS::{*/
     
+    /*FF::AC::REFERENCE_FUNCTIONS::bbb::{*/        
+        
+    public function getBbbs($load = true)
+    {
+      $cacheKey = 'image_bbbs_' . $this->properties['identifier'];
+      
+      $sql = "
+        SELECT 
+          `link_a_b`.`bbbId` AS `identifier`
+        FROM 
+          `link_a_b`
+        WHERE 
+          `link_a_b`.`aaaId` = " . $this->properties['identifier'] . ";
+      ";
+      
+      if (!$load)
+      {
+        $this->properties['oldBbbIds'] = $this->getSimpleLinks($sql, $cacheKey, 'author', E_OBJECTS_NOT_FOUND, $load);
+        
+        return $this->properties['oldBbbIds'];
+      }
+      else
+      {
+        return $this->getSimpleLinks($sql, $cacheKey, 'author', E_OBJECTS_NOT_FOUND, $load);
+      }
+    }
+
+    public function addBbb($bbbId)
+    {
+      $bbbIds = $this->bbbIds;
+      
+      if (!in_array($bbbId, $bbbIds))
+      {
+        $this->properties['bbbIds'][] = $bbbId;
+      }
+      
+      $this->dirty['saveBbbs'] = true;
+    }
+
+    public function removeBbb($bbbId)
+    {
+      $bbbIds = $this->bbbIds;
+      
+      foreach ($bbbIds as $key => $identifier)
+      {
+        if ($identifier == $bbbId)
+        {
+          unset($this->properties['bbbIds'][$key]);
+        }
+      }
+      
+      $this->dirty['saveBbbs'] = true;
+    }
+
+    public function removeBbbs()
+    {
+      $this->properties['bbbIds'] = array();
+      
+      $this->dirty['saveBbbs'] = true;
+    }
+
+    protected function saveBbbs()
+    {
+      $dataLink = $this->application->dataLink;
+      $cacheLink = $this->application->cacheLink;
+      
+      $cacheKeysToDelete = array();
+      $cacheKeysToDelete[] = 'image_bbbs_' . $this->properties['identifier']; 
+      
+      $oldBbbIds = $this->properties['oldBbbIds'];
+      $bbbIds = $this->properties['bbbIds'];
+      
+      $idsToDelete = array_diff($oldBbbIds, $bbbIds);
+      $idsToAdd = array_diff($bbbIds, $oldBbbIds);
+      
+      foreach ($idsToDelete as $idToDelete)
+      {
+        $cacheKeysToDelete[] = 'bbb_images_' . $idToDelete;
+      }
+      
+      foreach ($cacheKeysToDelete as $cacheKey)
+      {
+        $cacheLink->delete($cacheKey);
+      }
+      
+      if (count($idsToDelete) > 0)
+      {
+        $sql = "
+          DELETE FROM 
+            `link_a_b`
+          WHERE 
+            `aaaId` = " . $this->properties['identifier'] . "
+            AND `bbbId` IN (" . implode(', ', $idsToDelete) . ");";
+        
+        $dataLink->query($sql);
+      }
+      
+      $insertStrings = array();
+      
+      foreach ($idsToAdd as $identifier)
+      { 
+        $insertStrings[] = '(' . $dataLink->formatInput($this->properties['identifier'], BM_VT_INTEGER) . ", " . $dataLink->formatInput($identifier, BM_VT_INTEGER) . ')';
+      }
+      
+      if (count($insertStrings) > 0)
+      {
+        $sql = "INSERT IGNORE INTO
+                  `link_a_b`
+                  (aaaId, bbbId)
+                VALUES
+                  " . implode(', ', $insertStrings) . ";";
+                  
+        $dataLink->query($sql);
+      }
+      
+      $this->enqueueCache('saveBbbs');
+      $this->dirty['saveBbbs'] = false;
+      
+      $this->properties['oldBbbIds'] = $this->properties['bbbIds'];
+    }
+    
+    /*FF::AC::REFERENCE_FUNCTIONS::bbb::}*/
+
     /*FF::AC::REFERENCE_FUNCTIONS::user::{*/        
         
     public function getUsers($load = true)
@@ -117,11 +252,16 @@
       
       $map = array('user IS user' => 5, 'image IS image' => 5, 'ab' => 2);
       
-      // Problem here: what if $load = true? :-)
-      
-      $this->properties['oldUserIds'] = $this->getComplexLinks($sql, $cacheKey, $map, E_OBJECTS_NOT_FOUND, $load);
-      
-      return $this->properties['oldUserIds'];
+      if (!$load)
+      {
+        $this->properties['oldUserIds'] = $this->getComplexLinks($sql, $cacheKey, $map, E_OBJECTS_NOT_FOUND, $load);
+        
+        return $this->properties['oldUserIds'];
+      }
+      else
+      {
+        return $this->getComplexLinks($sql, $cacheKey, $map, E_OBJECTS_NOT_FOUND, $load);
+      }
     }
 
     
@@ -135,6 +275,8 @@
         
     public function delete()
     {
+      $this->removeBbbs();
+
       
       
       $users = $this->users;

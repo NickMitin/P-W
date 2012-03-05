@@ -1877,3 +1877,76 @@ INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`
 ALTER TABLE
                   `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
 
+-- 2012.02.14 15:04:41
+CREATE TABLE `link_a_b` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2012.02.14 15:04:41
+INSERT INTO `referenceMap` SET `name` = 'link_a_b',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'link_a_b',`type` = 0,`id` = 0;
+
+-- 2012.02.14 15:05:02
+INSERT INTO `referenceField` SET `propertyName` = 'aaa',`fieldName` = 'aaa',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"aaa\";s:8:\"genitive\";s:3:\"aaa\";s:6:\"dative\";s:3:\"aaa\";s:8:\"accusive\";s:3:\"aaa\";s:8:\"creative\";s:3:\"aaa\";s:13:\"prepositional\";s:3:\"aaa\";}',`defaultValue` = '0',`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'aaa',`fieldName` = 'aaa',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"aaa\";s:8:\"genitive\";s:3:\"aaa\";s:6:\"dative\";s:3:\"aaa\";s:8:\"accusive\";s:3:\"aaa\";s:8:\"creative\";s:3:\"aaa\";s:13:\"prepositional\";s:3:\"aaa\";}',`defaultValue` = '0',`id` = 0;
+
+-- 2012.02.14 15:05:02
+INSERT INTO `referenceField` SET `propertyName` = 'aaa',`fieldName` = 'aaa',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"aaa\";s:8:\"genitive\";s:3:\"aaa\";s:6:\"dative\";s:3:\"aaa\";s:8:\"accusive\";s:3:\"aaa\";s:8:\"creative\";s:3:\"aaa\";s:13:\"prepositional\";s:3:\"aaa\";}',`defaultValue` = '0',`id` = 12 ON DUPLICATE KEY UPDATE `propertyName` = 'aaa',`fieldName` = 'aaa',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"aaa\";s:8:\"genitive\";s:3:\"aaa\";s:6:\"dative\";s:3:\"aaa\";s:8:\"accusive\";s:3:\"aaa\";s:8:\"creative\";s:3:\"aaa\";s:13:\"prepositional\";s:3:\"aaa\";}',`defaultValue` = '0',`id` = 12;
+
+-- 2012.02.14 15:05:02
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 12;
+
+-- 2012.02.14 15:05:02
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (5, 12);
+
+-- 2012.02.14 15:05:03
+INSERT INTO `referenceField` SET `propertyName` = 'bbb',`fieldName` = 'bbb',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"bbb\";s:8:\"genitive\";s:3:\"bbb\";s:6:\"dative\";s:3:\"bbb\";s:8:\"accusive\";s:3:\"bbb\";s:8:\"creative\";s:3:\"bbb\";s:13:\"prepositional\";s:3:\"bbb\";}',`defaultValue` = '0',`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'bbb',`fieldName` = 'bbb',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"bbb\";s:8:\"genitive\";s:3:\"bbb\";s:6:\"dative\";s:3:\"bbb\";s:8:\"accusive\";s:3:\"bbb\";s:8:\"creative\";s:3:\"bbb\";s:13:\"prepositional\";s:3:\"bbb\";}',`defaultValue` = '0',`id` = 0;
+
+-- 2012.02.14 15:05:03
+INSERT INTO `referenceField` SET `propertyName` = 'bbb',`fieldName` = 'bbb',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"bbb\";s:8:\"genitive\";s:3:\"bbb\";s:6:\"dative\";s:3:\"bbb\";s:8:\"accusive\";s:3:\"bbb\";s:8:\"creative\";s:3:\"bbb\";s:13:\"prepositional\";s:3:\"bbb\";}',`defaultValue` = '0',`id` = 13 ON DUPLICATE KEY UPDATE `propertyName` = 'bbb',`fieldName` = 'bbb',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:3:\"bbb\";s:8:\"genitive\";s:3:\"bbb\";s:6:\"dative\";s:3:\"bbb\";s:8:\"accusive\";s:3:\"bbb\";s:8:\"creative\";s:3:\"bbb\";s:13:\"prepositional\";s:3:\"bbb\";}',`defaultValue` = '0',`id` = 13;
+
+-- 2012.02.14 15:05:03
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 13;
+
+-- 2012.02.14 15:05:03
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (7, 13);
+
+-- 2012.02.14 15:05:03
+DELETE FROM `link_referenceMap_referenceField` WHERE `referenceMapId` = 6;
+
+-- 2012.02.14 15:05:03
+INSERT IGNORE INTO
+                  `link_referenceMap_referenceField`
+                  (`referenceMapId`, `referenceFieldId`, `referenceFieldType`)
+                VALUES
+                  (6, 12, 1), (6, 13, 2);
+
+-- 2012.02.14 15:05:03
+ALTER TABLE
+                  `link_a_b`ADD COLUMN `aaaId`  INT(10) UNSIGNED, ADD COLUMN `bbbId`  INT(10) UNSIGNED;
+
+-- 2012.02.14 15:05:03
+ALTER TABLE
+                  `link_a_b`ADD INDEX `aaaId` (`aaaId`), ADD INDEX `bbbId` (`bbbId`);
+
+-- 2012.02.14 15:05:03
+DELETE FROM `link_referenceMap_referenceField` WHERE `referenceMapId` = 6;
+
+-- 2012.02.14 15:05:03
+INSERT IGNORE INTO
+                  `link_referenceMap_referenceField`
+                  (`referenceMapId`, `referenceFieldId`, `referenceFieldType`)
+                VALUES
+                  (6, 12, 1), (6, 13, 2);
+
+-- 2012.03.05 13:39:34
+INSERT INTO `dataObjectField` SET `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651 ON DUPLICATE KEY UPDATE `propertyName` = 'name',`fieldName` = 'name',`dataType` = 1,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"name\";s:8:\"genitive\";s:4:\"name\";s:6:\"dative\";s:4:\"name\";s:8:\"accusive\";s:4:\"name\";s:8:\"creative\";s:4:\"name\";s:13:\"prepositional\";s:4:\"name\";}',`defaultValue` = '0',`type` = 0,`id` = 651;
+
+-- 2012.03.05 13:39:34
+ALTER TABLE
+                  `author`CHANGE `name` `name`  VARCHAR(255) NOT NULL DEFAULT '0';
+

@@ -6,7 +6,7 @@
       
       {$deleteDependentReferences}
       
-      \$this->application->cacheLink->delete(\$this->objectName . \$this->properties['identifier']); 
+      \$this->application->cacheLink->delete(\$this->objectName . '_' . \$this->properties['identifier']); 
       
       \$sql = "DELETE FROM 
                 `$this->name` 

@@ -117,11 +117,16 @@
       
       $map = array('user IS user' => 5, 'image IS image' => 5, 'ab' => 2);
       
-      // Problem here: what if $load = true? :-)
-      
-      $this->properties['oldImageIds'] = $this->getComplexLinks($sql, $cacheKey, $map, E_OBJECTS_NOT_FOUND, $load);
-      
-      return $this->properties['oldImageIds'];
+      if (!$load)
+      {
+        $this->properties['oldImageIds'] = $this->getComplexLinks($sql, $cacheKey, $map, E_OBJECTS_NOT_FOUND, $load);
+        
+        return $this->properties['oldImageIds'];
+      }
+      else
+      {
+        return $this->getComplexLinks($sql, $cacheKey, $map, E_OBJECTS_NOT_FOUND, $load);
+      }
     }
 
     public function addImage($imageId, $ab)
@@ -184,7 +189,7 @@
         $cacheLink->delete($cacheKey);
       }
       
-      if (count($idsToDelete) > 0)
+      if (count($itemsToDelete) > 0)
       {
         $sql = "
           DELETE FROM 
@@ -216,6 +221,8 @@
       
       $this->enqueueCache('saveImages');
       $this->dirty['saveImages'] = false;    
+      
+      $this->properties['oldImageIds'] = $this->properties['imageIds'];
     }
     
     /*FF::AC::REFERENCE_FUNCTIONS::image::}*/

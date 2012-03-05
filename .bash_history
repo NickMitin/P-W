@@ -1,15 +1,3 @@
-exit
-php /mymedia/projects/ff/www/therules/rss/generator.php
-date
-exit
-cd ~
-crontab -e
-php /mymedia/projects/ff/www/therules/rss/generator.php
-exit
-php /mymedia/projects/ff/www/therules/rss/generator.php
-crontab -e
-Set
-set
 set EDITOR=joe
 crontab -e
 export EDITOR="joe"
@@ -498,3 +486,15 @@ git checkout master
 git branch
 git push
 exit
+cd ~;
+ls -al
+cat git_update 
+./git_update 
+cat build_
+cat build_paw 
+./build_paw 
+chmod 0600 /mymedia/projects/ff/.ssh/id_rsa
+./build_paw 
+./build_paw 'synx'
+exit
+git branch

@@ -80,6 +80,18 @@
           return $this->getSketchs();
         break;
         /*FF::AC::GETTER_CASE::sketch::}*/
+        /*FF::AC::GETTER_CASE::aaa::{*/
+        case 'aaaIds':
+          if (!array_key_exists('aaaIds', $this->properties))
+          {
+            $this->properties['aaaIds'] = $this->getAaas(false);
+          }
+          return $this->properties['aaaIds'];
+        break;
+        case 'aaas':
+          return $this->getAaas();
+        break;
+        /*FF::AC::GETTER_CASE::aaa::}*/
  
         /*FF::AC::TOP::GETTER::}*/
         default:
@@ -185,8 +197,6 @@
             AND `book2Id` IN (" . implode(', ', $idsToDelete) . ");";
         
         $dataLink->query($sql);
-        
-        echo '<br />' . $sql . '<br />';
       }
       
       $insertStrings = array();
@@ -205,8 +215,6 @@
                   " . implode(', ', $insertStrings) . ";";
                   
         $dataLink->query($sql);
-        
-        echo '<br />' . $sql . '<br />';
       }
       
       $this->enqueueCache('saveBooks');
@@ -318,8 +326,6 @@
             AND `sketch2Id` IN (" . $this->itemImplode($itemsToDelete, 'sketchId') . ");";
         
         $dataLink->query($sql);
-        
-        echo '<br />' . $sql . '<br />';
       }
       
       $insertStrings = array();
@@ -338,8 +344,6 @@
                   " . implode(', ', $insertStrings) . ";";
                   
         $dataLink->query($sql);
-        
-        echo '<br />' . $sql . '<br />';
       }
       
       $this->enqueueCache('saveSketchs');
@@ -349,6 +353,37 @@
     }
     
     /*FF::AC::REFERENCE_FUNCTIONS::sketch::}*/
+
+    /*FF::AC::REFERENCE_FUNCTIONS::aaa::{*/        
+        
+    public function getAaas($load = true)
+    {
+      $cacheKey = 'author_aaas_' . $this->properties['identifier'];
+      
+      $sql = "
+        SELECT 
+          `link_a_b`.`aaaId` AS `identifier`
+        FROM 
+          `link_a_b`
+        WHERE 
+          `link_a_b`.`bbbId` = " . $this->properties['identifier'] . ";
+      ";
+      
+      if (!$load)
+      {
+        $this->properties['oldAaaIds'] = $this->getSimpleLinks($sql, $cacheKey, 'image', E_OBJECTS_NOT_FOUND, $load);
+        
+        return $this->properties['oldAaaIds'];
+      }
+      else
+      {
+        return $this->getSimpleLinks($sql, $cacheKey, 'image', E_OBJECTS_NOT_FOUND, $load);
+      }
+    }
+
+    
+    
+    /*FF::AC::REFERENCE_FUNCTIONS::aaa::}*/
 
 
     /*FF::AC::TOP::REFERENCE_FUNCTIONS::}*/
@@ -363,9 +398,16 @@
 
       
       
+      $aaas = $this->aaas;
+
+      foreach ($aaas as $aaa)
+      {
+        $aaa->removeBbb($this->properties['identifier']);
+      }
+
       
       
-      $this->application->cacheLink->delete($this->objectName . $this->properties['identifier']); 
+      $this->application->cacheLink->delete($this->objectName . '_' . $this->properties['identifier']); 
       
       $sql = "DELETE FROM 
                 `author` 
