@@ -9,7 +9,6 @@ macros
 done
 files
 	"build_install\n"
-	"build_install\n"
 	"build_paw\n"
 	"build_paw\n"
 	"/mymedia/projects/ff/build_paw\n"
@@ -18,6 +17,7 @@ files
 	"/mymedia/projects/ff/build_paw\n"
 	"/mymedia/projects/ff/build_paw\n"
 	"sync sql\n"
+	"/mymedia/projects/ff/build_paw\n"
 done
 find
 done
@@ -144,6 +144,6 @@ file_pos
 	4 "build_paw"
 	0 "/mymedia/projects/ff/build_install"
 	39 "/mymedia/projects/ff/build_update"
-	3 "/mymedia/projects/ff/build_paw"
 	0 "sync sql"
+	5 "/mymedia/projects/ff/build_paw"
 done
