@@ -92,7 +92,7 @@ www/modules/admin/references/rp/delete.php
 www/modules/admin/router/index.php
 www/modules/admin/router/rp/saveParameter.php
 www/modules/admin/router/rp/deleteParameter.php
-www/moduler/errors/404.php
+www/modules/errors/404.php
 www/scripts/ff/jquery.js
 www/scripts/ff/jquery.paw.js
 www/scripts/admin/index/index.js

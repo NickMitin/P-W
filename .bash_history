@@ -1,54 +1,3 @@
-set EDITOR=joe
-crontab -e
-export EDITOR="joe"
-crontab -e
-php /mymedia/projects/ff/www/therules/rss/generator.php
-exti
-exit
-php /mymedia/projects/ff/www/therules/rss/generator.php
-exit
-cd ~
-export EDITOR="joe"
-crontab -e
-php /mymedia/projects/ff/www/therules/rss/generator.php
-cd ~
-ls
-cd www/therules/rss/
-ls
-php ./generator.php 
-ls
-rm feeds\\feeds/
-rm -fR feeds\\feeds/
-export EDITOR="joe"
-crontab -e
-exit
-cd ~
-cd ./www/therules/
-ls
-zip
-zip rss.zip
-zip rss.zip * 
-eixt
-exit
-cd ~
-ls
-cd www/
-;s
-ls
-cd therules/
-cd rss
-ls
-ls -al
-zip rss.zip *
-zip -h
-zip -r rss.zip *
-exit
-cd ~
-sl -al
-ls -al
-rm Вьетнам/
-rm -fR Вьетнам/
-rm -fR Иордания/
 ls -al
 cat sql.sql 
 joe ./conf/db_default.conf 
@@ -498,3 +447,54 @@ chmod 0600 /mymedia/projects/ff/.ssh/id_rsa
 ./build_paw 'synx'
 exit
 git branch
+git branch
+git diff
+git checkout master
+git add .
+git commit -a -m 'sync'
+git checkout master
+git checkout HEAD
+git diff
+git branch
+ls
+ls
+cd lib
+ls
+git pull
+cd .
+cd /
+ls
+cd ~
+ls
+git branch
+git checkout dataObjectSave
+git checkout master
+exit
+cd ~;
+ls -al
+cd lib
+ls -al
+git pull
+exti
+exit
+cd ~;
+cd lib
+git pull
+ls a-l
+ls -al
+cd ..
+ls -al
+exit
+cd ~/lib/
+git clone git@github.com:NickMitin/FuckFrameworks.git
+cd FuckFrameworks/
+mv -vf .git* * ../
+ls -al
+cd ..
+rm -fR FuckFrameworks/
+ls -al
+ls
+cd lib
+git pull
+ls
+exit
