@@ -8,16 +8,16 @@ done
 macros
 done
 files
-	"filelist.txt\n"
-	"gitadd.sh\n"
-	"build_install\n"
-	"build_install\n"
-	"build_install\n"
-	"build_install\n"
 	"build_install\n"
 	"build_install\n"
 	"build_paw\n"
 	"build_paw\n"
+	"/mymedia/projects/ff/build_paw\n"
+	"/mymedia/projects/ff/build_install\n"
+	"/mymedia/projects/ff/build_update\n"
+	"/mymedia/projects/ff/build_paw\n"
+	"/mymedia/projects/ff/build_paw\n"
+	"sync sql\n"
 done
 find
 done
@@ -142,4 +142,8 @@ file_pos
 	11 "gitadd.sh"
 	3 "build_install"
 	4 "build_paw"
+	0 "/mymedia/projects/ff/build_install"
+	39 "/mymedia/projects/ff/build_update"
+	3 "/mymedia/projects/ff/build_paw"
+	0 "sync sql"
 done
