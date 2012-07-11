@@ -1,31 +1,3 @@
-ls -al
-cat sql.sql 
-joe ./conf/db_default.conf 
-du -h
-du * -hs
-cd www
-du * -hs
-joe ../conf/db_default.conf 
-cd ~
-cd /mymedia/ff/
-ls
-ls -al
-git init
-git add .
-cd .git/
-ls -al
-exit
-cd /mymedia/ff/
-ls
-git init
-git add .
-git commit -a -m "initial commin"
-git push
-joe /mymedia/projects/ff/conf/db_default.conf 
-git commit "test"
-git commit 
-
-git commit "factoids"
 cd ~;
 grep -lir 'IDataObject'
 grep -lir 'IDataObject' *
@@ -497,4 +469,32 @@ ls
 cd lib
 git pull
 ls
+exit
+cd ~/
+cd ~
+./build_install 
+~/build_paw
+cd ~;
+~/build_paw
+~/build_paw 'sync'
+joe ~/build_paw 
+joe ~/build_install 
+joe ~/build_update 
+joe ~/build_paw 
+joe ~/build_paw 'sync sql'
+~/build_paw 'sync sql'
+joe ~/build_paw 
+~/build_paw 'sync sql'
+cd ~/lib/
+git pull;
+ls -al
+exit
+cd ~/lib/
+git pull;
+ls -al
+cd .git/
+ls -al
+cd ..
+git pull;
+ls -lah .git/objects
 exit
