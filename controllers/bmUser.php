@@ -39,12 +39,12 @@
         'email' => array(
           'fieldName' => 'email',
           'dataType' => BM_VT_STRING,
-          'defaultValue' => '0'
+          'defaultValue' => ''
         ),
         'password' => array(
           'fieldName' => 'password',
           'dataType' => BM_VT_PASSWORD,
-          'defaultValue' => '0'
+          'defaultValue' => ''
         ),
         'type' => array(
           'fieldName' => 'type',
@@ -66,6 +66,18 @@
       {
         /*FF::AC::TOP::GETTER::{*/
         
+        /*FF::AC::GETTER_CASE::image::{*/
+        case 'imageIds':
+          if (!array_key_exists('imageIds', $this->properties))
+          {
+            $this->properties['imageIds'] = $this->getImages(false);
+          }
+          return $this->properties['imageIds'];
+        break;
+        case 'images':
+          return $this->getImages();
+        break;
+        /*FF::AC::GETTER_CASE::image::}*/
  
         /*FF::AC::TOP::GETTER::}*/
         default:
@@ -76,6 +88,129 @@
     
     /*FF::AC::TOP::REFERENCE_FUNCTIONS::{*/
     
+    /*FF::AC::REFERENCE_FUNCTIONS::image::{*/        
+        
+    public function getImages($load = true)
+    {
+      $cacheKey = 'user_images_' . $this->properties['identifier'];
+      
+      $sql = "
+        SELECT 
+          `link_user_image`.`imageId` AS `identifier`
+        FROM 
+          `link_user_image`
+        WHERE 
+          `link_user_image`.`userId` = " . $this->properties['identifier'] . ";
+      ";
+      
+      if (!$load)
+      {
+        $this->properties['oldImageIds'] = $this->getSimpleLinks($sql, $cacheKey, 'image', E_OBJECTS_NOT_FOUND, $load);
+        
+        return $this->properties['oldImageIds'];
+      }
+      else
+      {
+        return $this->getSimpleLinks($sql, $cacheKey, 'image', E_OBJECTS_NOT_FOUND, $load);
+      }
+    }
+
+    public function addImage($imageId)
+    {
+      $imageIds = $this->imageIds;
+      
+      if (!in_array($imageId, $imageIds))
+      {
+        $this->properties['imageIds'][] = $imageId;
+      }
+      
+      $this->dirty['saveImages'] = true;
+    }
+
+    public function removeImage($imageId)
+    {
+      $imageIds = $this->imageIds;
+      
+      foreach ($imageIds as $key => $identifier)
+      {
+        if ($identifier == $imageId)
+        {
+          unset($this->properties['imageIds'][$key]);
+        }
+      }
+      
+      $this->dirty['saveImages'] = true;
+    }
+
+    public function removeImages()
+    {
+      $this->properties['imageIds'] = array();
+      
+      $this->dirty['saveImages'] = true;
+    }
+
+    protected function saveImages()
+    {
+      $dataLink = $this->application->dataLink;
+      $cacheLink = $this->application->cacheLink;
+      
+      $cacheKeysToDelete = array();
+      $cacheKeysToDelete[] = 'user_images_' . $this->properties['identifier']; 
+      
+      $oldImageIds = $this->properties['oldImageIds'];
+      $imageIds = $this->properties['imageIds'];
+      
+      $idsToDelete = array_diff($oldImageIds, $imageIds);
+      $idsToAdd = array_diff($imageIds, $oldImageIds);
+      
+      foreach ($idsToDelete as $idToDelete)
+      {
+        $cacheKeysToDelete[] = 'image_users_' . $idToDelete;
+      }
+      
+      foreach ($cacheKeysToDelete as $cacheKey)
+      {
+        $cacheLink->delete($cacheKey);
+      }
+      
+      if (count($idsToDelete) > 0)
+      {
+        $sql = "
+          DELETE FROM 
+            `link_user_image`
+          WHERE 
+            `userId` = " . $this->properties['identifier'] . "
+            AND `imageId` IN (" . implode(', ', $idsToDelete) . ");";
+        
+        $dataLink->query($sql);
+      }
+      
+      $insertStrings = array();
+      
+      foreach ($idsToAdd as $identifier)
+      { 
+        $insertStrings[] = '(' . $dataLink->formatInput($this->properties['identifier'], BM_VT_INTEGER) . ", " . $dataLink->formatInput($identifier, BM_VT_INTEGER) . ')';
+      }
+      
+      if (count($insertStrings) > 0)
+      {
+        $sql = "INSERT IGNORE INTO
+                  `link_user_image`
+                  (userId, imageId)
+                VALUES
+                  " . implode(', ', $insertStrings) . ";";
+                  
+        $dataLink->query($sql);
+      }
+      
+      $this->enqueueCache('saveImages');
+      $this->dirty['saveImages'] = false;
+      
+      $this->properties['oldImageIds'] = $this->properties['imageIds'];
+    }
+    
+    /*FF::AC::REFERENCE_FUNCTIONS::image::}*/
+
 
     /*FF::AC::TOP::REFERENCE_FUNCTIONS::}*/
   }

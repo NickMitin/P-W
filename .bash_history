@@ -1,32 +1,3 @@
-cd ~;
-grep -lir 'IDataObject'
-grep -lir 'IDataObject' *
-grep -vlir 'IDataObject' *
-grep -lir 'IDataObject' *
-cat ./conf/db_default.conf 
-cd ~
-ls -al
-ls
-ls -al
-exir
-exit
-cd ~
-ls
-ls -al
-cat filelist.txt 
-cat filelist.txt | grep gene
-cat filelist.txt | grep generat
-cat filelist.txt | grep generator
-zip
-zip paw.zip < filelist.txt 
-zip paw.zip | cat filelist.txt 
-ls
-zip paw.zip | cat filelist.txt 
-cat filelist.txt | paw.zip -@
-cat filelist.txt | zip paw.zip -@
-cat filelist.txt | zip ./www/paw.zip -@
-cat filelist.txt | zip ~/www/paw.zip -@
-id
 cd ~
 ls
 cd www/
@@ -498,3 +469,32 @@ cd ..
 git pull;
 ls -lah .git/objects
 exit
+cd ~/lib/
+git pull;
+git commit -a -m 'sync'
+git pull;
+git reset hard
+git reset --hard
+
+git add .
+git commit -a -m 'sync'
+git pull;
+git commit -a -m 'sync'
+git pull;
+git push;
+cd ..
+~/build_paw 
+~/build_paw 'sync'
+cd ~/lib
+ls -al
+git add .
+git commit -a -m 'add new files'
+git push;
+cd ~
+joe filelist.txt 
+ls -l ~/lib/*
+ls ~/lib/*
+cd ~/lib
+ls -
+ls -l
+cd ~;

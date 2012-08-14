@@ -2287,3 +2287,69 @@ INSERT IGNORE INTO
 ALTER TABLE
                   `textPage`ADD COLUMN `title`  VARCHAR(255) NOT NULL DEFAULT '', ADD COLUMN `keywords`  TEXT NOT NULL DEFAULT '', ADD COLUMN `description`  TEXT NOT NULL DEFAULT '', ADD COLUMN `content`  TEXT NOT NULL DEFAULT '', ADD COLUMN `url`  VARCHAR(255) NOT NULL DEFAULT '', ADD COLUMN `status`  INT(10) NOT NULL DEFAULT '0';
 
+-- 2012.07.23 20:50:11
+CREATE TABLE `link_user_textPage` (`id` int(10) unsigned NOT NULL AUTO_INCREMENT, PRIMARY KEY (`id`)) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- 2012.07.23 20:50:11
+INSERT INTO `referenceMap` SET `name` = 'link_user_textPage',`type` = 0,`id` = 0 ON DUPLICATE KEY UPDATE `name` = 'link_user_textPage',`type` = 0,`id` = 0;
+
+-- 2012.07.23 20:50:29
+INSERT INTO `referenceField` SET `propertyName` = 'user',`fieldName` = 'user',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"user\";s:8:\"genitive\";s:4:\"user\";s:6:\"dative\";s:4:\"user\";s:8:\"accusive\";s:4:\"user\";s:8:\"creative\";s:4:\"user\";s:13:\"prepositional\";s:4:\"user\";}',`defaultValue` = '0',`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'user',`fieldName` = 'user',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"user\";s:8:\"genitive\";s:4:\"user\";s:6:\"dative\";s:4:\"user\";s:8:\"accusive\";s:4:\"user\";s:8:\"creative\";s:4:\"user\";s:13:\"prepositional\";s:4:\"user\";}',`defaultValue` = '0',`id` = 0;
+
+-- 2012.07.23 20:50:29
+INSERT INTO `referenceField` SET `propertyName` = 'user',`fieldName` = 'user',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"user\";s:8:\"genitive\";s:4:\"user\";s:6:\"dative\";s:4:\"user\";s:8:\"accusive\";s:4:\"user\";s:8:\"creative\";s:4:\"user\";s:13:\"prepositional\";s:4:\"user\";}',`defaultValue` = '0',`id` = 1 ON DUPLICATE KEY UPDATE `propertyName` = 'user',`fieldName` = 'user',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:4:\"user\";s:8:\"genitive\";s:4:\"user\";s:6:\"dative\";s:4:\"user\";s:8:\"accusive\";s:4:\"user\";s:8:\"creative\";s:4:\"user\";s:13:\"prepositional\";s:4:\"user\";}',`defaultValue` = '0',`id` = 1;
+
+-- 2012.07.23 20:50:29
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 1;
+
+-- 2012.07.23 20:50:29
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (1, 1);
+
+-- 2012.07.23 20:50:29
+INSERT INTO `referenceField` SET `propertyName` = 'textPage',`fieldName` = 'textPage',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:8:\"textPage\";s:8:\"genitive\";s:8:\"textPage\";s:6:\"dative\";s:8:\"textPage\";s:8:\"accusive\";s:8:\"textPage\";s:8:\"creative\";s:8:\"textPage\";s:13:\"prepositional\";s:8:\"textPage\";}',`defaultValue` = '0',`id` = 0 ON DUPLICATE KEY UPDATE `propertyName` = 'textPage',`fieldName` = 'textPage',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:8:\"textPage\";s:8:\"genitive\";s:8:\"textPage\";s:6:\"dative\";s:8:\"textPage\";s:8:\"accusive\";s:8:\"textPage\";s:8:\"creative\";s:8:\"textPage\";s:13:\"prepositional\";s:8:\"textPage\";}',`defaultValue` = '0',`id` = 0;
+
+-- 2012.07.23 20:50:29
+INSERT INTO `referenceField` SET `propertyName` = 'textPage',`fieldName` = 'textPage',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:8:\"textPage\";s:8:\"genitive\";s:8:\"textPage\";s:6:\"dative\";s:8:\"textPage\";s:8:\"accusive\";s:8:\"textPage\";s:8:\"creative\";s:8:\"textPage\";s:13:\"prepositional\";s:8:\"textPage\";}',`defaultValue` = '0',`id` = 2 ON DUPLICATE KEY UPDATE `propertyName` = 'textPage',`fieldName` = 'textPage',`dataType` = 5,`localName` = 'a:6:{s:10:\"nominative\";s:8:\"textPage\";s:8:\"genitive\";s:8:\"textPage\";s:6:\"dative\";s:8:\"textPage\";s:8:\"accusive\";s:8:\"textPage\";s:8:\"creative\";s:8:\"textPage\";s:13:\"prepositional\";s:8:\"textPage\";}',`defaultValue` = '0',`id` = 2;
+
+-- 2012.07.23 20:50:29
+DELETE FROM `link_referenceField_dataObjectMap` WHERE `referenceFieldId` = 2;
+
+-- 2012.07.23 20:50:29
+INSERT IGNORE INTO
+                  `link_referenceField_dataObjectMap`
+                  (`dataObjectMapId`, `referenceFieldId`)  
+                  VALUES
+                    (10, 2);
+
+-- 2012.07.23 20:50:29
+DELETE FROM `link_referenceMap_referenceField` WHERE `referenceMapId` = 1;
+
+-- 2012.07.23 20:50:29
+INSERT IGNORE INTO
+                  `link_referenceMap_referenceField`
+                  (`referenceMapId`, `referenceFieldId`, `referenceFieldType`)
+                VALUES
+                  (1, 1, 1), (1, 2, 2);
+
+-- 2012.07.23 20:50:30
+ALTER TABLE
+                  `link_user_textPage`ADD COLUMN `userId`  INT(10) UNSIGNED, ADD COLUMN `textPageId`  INT(10) UNSIGNED;
+
+-- 2012.07.23 20:50:30
+ALTER TABLE
+                  `link_user_textPage`ADD INDEX `userId` (`userId`), ADD INDEX `textPageId` (`textPageId`);
+
+-- 2012.07.23 20:50:30
+DELETE FROM `link_referenceMap_referenceField` WHERE `referenceMapId` = 1;
+
+-- 2012.07.23 20:50:30
+INSERT IGNORE INTO
+                  `link_referenceMap_referenceField`
+                  (`referenceMapId`, `referenceFieldId`, `referenceFieldType`)
+                VALUES
+                  (1, 1, 1), (1, 2, 2);
+
